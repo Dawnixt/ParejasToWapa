@@ -1,0 +1,5 @@
+D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-BL\ParejasCartas-BL.csproj;x86
+D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-DAL\ParejasCartas-DAL.csproj;x86
+D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\ParejasCartas-Entities.csproj;x86
+D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\ParejasCartas-Entities.csproj;x86
+D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\ParejasCartas-UI.csproj;x86
