@@ -16,7 +16,11 @@ namespace ParejasCartas_DAL.Handlers
         {
 
         }
-
+        /// <summary>
+        /// Esta funcion nos permite introducir una puntuacion en la base de datos
+        /// </summary>
+        /// <param name="puntuacion">Es el tiempo y el nombre del usuario</param>
+        /// <returns></returns>
         public int insertarPuntuacion(clsScore puntuacion)
         {
             int filasCambiadas = 0;

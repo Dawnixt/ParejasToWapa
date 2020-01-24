@@ -15,6 +15,11 @@ namespace ParejasCartas_BL.Handlers
 
         }
 
+        /// <summary>
+        /// Esta funcion se conecta con la capa DAL y nos permite insertar una nueva puntuacion a la base de datos
+        /// </summary>
+        /// <param name="puntuacion">Es el tiempo y el nombre del usuario</param>
+        /// <returns>El numero de columnas modificadas</returns>
         public int insertarPuntuacionBL(clsScore puntuacion)
         {
             int filas = 0;

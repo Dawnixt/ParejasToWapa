@@ -16,6 +16,10 @@ namespace ParejasCartas_DAL.Lists
 
         }
 
+        /// <summary>
+        /// Esta funcion obtiene el listado de puntuaciones de la base de datos ordenadas de mejor a peor
+        /// </summary>
+        /// <returns>Un listado con las puntuaciones de mejor a peor</returns>
         public List<clsScore> obtenerPuntuaciones()
         {
             List<clsScore> scores = new List<clsScore>();
@@ -50,7 +54,7 @@ namespace ParejasCartas_DAL.Lists
 
                         if (!String.IsNullOrEmpty(reader["tiempo"].ToString()))
                         {
-                            puntuacion.Nombre = (String)reader["tiempo"];
+                            puntuacion.Tiempo = (String)reader["tiempo"];
                         }
 
                         scores.Add(puntuacion);

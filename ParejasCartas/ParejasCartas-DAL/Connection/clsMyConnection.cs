@@ -34,11 +34,11 @@ namespace ParejasCartas_DAL.Connection
 
         public clsMyConnection()
         {
-            // this.server = "(local)";
-            this.server = "daniserver.database.windows.net";
-            this.dataBase = "PersonasDB";
-            this.user = "dani";
-            this.pass = "Server1907";
+            this.server = "(local)";
+            //this.server = "daniserver.database.windows.net";
+            this.dataBase = "ParejasDani";
+            this.user = "prueba";
+            this.pass = "123";
 
             //this.server = "pablot90.database.windows.net";
             //this.dataBase = "PersonasDB";

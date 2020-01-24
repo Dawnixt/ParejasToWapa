@@ -306,6 +306,19 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "ParejasCartas-Entities/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm": {
@@ -791,6 +804,19 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "ParejasCartas-Entities/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
         }
       }
     },
@@ -1279,6 +1305,19 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "ParejasCartas-Entities/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm64-aot": {
@@ -1766,6 +1805,19 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "ParejasCartas-Entities/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x64": {
@@ -2251,6 +2303,19 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "ParejasCartas-Entities/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
         }
       }
     },
@@ -2739,6 +2804,19 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "ParejasCartas-Entities/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x86": {
@@ -3224,6 +3302,19 @@
         },
         "native": {
           "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll": {}
+        }
+      },
+      "ParejasCartas-Entities/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
         }
       }
     },
@@ -3711,6 +3802,19 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "ParejasCartas-Entities/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-Entities.dll": {}
         }
       }
     }
@@ -8142,11 +8246,17 @@
         "runtimes/win10-x86/lib/uap10.0.15138/netstandard.dll",
         "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
+    },
+    "ParejasCartas-Entities/1.0.0": {
+      "type": "project",
+      "path": "../ParejasCartas-Entities/ParejasCartas-Entities.csproj",
+      "msbuildProject": "../ParejasCartas-Entities/ParejasCartas-Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.8"
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.8",
+      "ParejasCartas-Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8179,7 +8289,11 @@
       },
       "frameworks": {
         "uap10.0.17763": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Ejercicios\\Github\\ParejasToWapa\\ParejasCartas\\ParejasCartas-Entities\\ParejasCartas-Entities.csproj": {
+              "projectPath": "D:\\Ejercicios\\Github\\ParejasToWapa\\ParejasCartas\\ParejasCartas-Entities\\ParejasCartas-Entities.csproj"
+            }
+          }
         }
       }
     },
@@ -8221,5 +8335,24 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Degradación del paquete detectada: Microsoft.NETCore.UniversalWindowsPlatform de 6.2.9 a 6.2.8. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n ParejasCartas-DAL -> ParejasCartas-Entities -> Microsoft.NETCore.UniversalWindowsPlatform (>= 6.2.9) \r\n ParejasCartas-DAL -> Microsoft.NETCore.UniversalWindowsPlatform (>= 6.2.8)",
+      "libraryId": "Microsoft.NETCore.UniversalWindowsPlatform",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763",
+        "UAP,Version=v10.0.17763/win10-arm",
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    }
+  ]
 }

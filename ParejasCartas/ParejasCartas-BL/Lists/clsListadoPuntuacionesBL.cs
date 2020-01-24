@@ -15,6 +15,10 @@ namespace ParejasCartas_BL.Lists
 
         }
 
+        /// <summary>
+        /// Esta funcion se conectara con la capa DAL y obtendra el listado de puntuaciones ordenadas de mejor a peor
+        /// </summary>
+        /// <returns>Un listado con las puntuaciones ordenadas de mejor a peor</returns>
         public List<clsScore> obtenerPuntuacionesBL()
         {
             List<clsScore> scores = new List<clsScore>();

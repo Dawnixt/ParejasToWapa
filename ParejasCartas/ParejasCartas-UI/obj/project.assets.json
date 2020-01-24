@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "UAP,Version=v10.0.16299": {
+    "UAP,Version=v10.0.17763": {
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -309,9 +309,10 @@
       },
       "ParejasCartas-BL/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.15063",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "ParejasCartas-DAL": "1.0.0",
           "ParejasCartas-Entities": "1.0.0"
         },
         "compile": {
@@ -321,9 +322,26 @@
           "bin/placeholder/ParejasCartas-BL.dll": {}
         }
       },
+      "ParejasCartas-DAL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.8",
+          "ParejasCartas-Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        }
+      },
       "ParejasCartas-Entities/1.0.0": {
         "type": "project",
-        "framework": "Unsupported,Version=v0.0",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
         "compile": {
           "bin/placeholder/ParejasCartas-Entities.dll": {}
         },
@@ -332,7 +350,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.16299/win10-arm": {
+    "UAP,Version=v10.0.17763/win10-arm": {
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -819,9 +837,10 @@
       },
       "ParejasCartas-BL/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.15063",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "ParejasCartas-DAL": "1.0.0",
           "ParejasCartas-Entities": "1.0.0"
         },
         "compile": {
@@ -831,9 +850,26 @@
           "bin/placeholder/ParejasCartas-BL.dll": {}
         }
       },
+      "ParejasCartas-DAL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.8",
+          "ParejasCartas-Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        }
+      },
       "ParejasCartas-Entities/1.0.0": {
         "type": "project",
-        "framework": "Unsupported,Version=v0.0",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
         "compile": {
           "bin/placeholder/ParejasCartas-Entities.dll": {}
         },
@@ -842,7 +878,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.16299/win10-arm-aot": {
+    "UAP,Version=v10.0.17763/win10-arm-aot": {
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -1330,9 +1366,10 @@
       },
       "ParejasCartas-BL/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.15063",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "ParejasCartas-DAL": "1.0.0",
           "ParejasCartas-Entities": "1.0.0"
         },
         "compile": {
@@ -1342,9 +1379,26 @@
           "bin/placeholder/ParejasCartas-BL.dll": {}
         }
       },
+      "ParejasCartas-DAL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.8",
+          "ParejasCartas-Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        }
+      },
       "ParejasCartas-Entities/1.0.0": {
         "type": "project",
-        "framework": "Unsupported,Version=v0.0",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
         "compile": {
           "bin/placeholder/ParejasCartas-Entities.dll": {}
         },
@@ -1353,7 +1407,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.16299/win10-arm64-aot": {
+    "UAP,Version=v10.0.17763/win10-arm64-aot": {
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -1841,9 +1895,10 @@
       },
       "ParejasCartas-BL/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.15063",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "ParejasCartas-DAL": "1.0.0",
           "ParejasCartas-Entities": "1.0.0"
         },
         "compile": {
@@ -1853,9 +1908,26 @@
           "bin/placeholder/ParejasCartas-BL.dll": {}
         }
       },
+      "ParejasCartas-DAL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.8",
+          "ParejasCartas-Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        }
+      },
       "ParejasCartas-Entities/1.0.0": {
         "type": "project",
-        "framework": "Unsupported,Version=v0.0",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
         "compile": {
           "bin/placeholder/ParejasCartas-Entities.dll": {}
         },
@@ -1864,7 +1936,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.16299/win10-x64": {
+    "UAP,Version=v10.0.17763/win10-x64": {
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -2351,9 +2423,10 @@
       },
       "ParejasCartas-BL/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.15063",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "ParejasCartas-DAL": "1.0.0",
           "ParejasCartas-Entities": "1.0.0"
         },
         "compile": {
@@ -2363,9 +2436,26 @@
           "bin/placeholder/ParejasCartas-BL.dll": {}
         }
       },
+      "ParejasCartas-DAL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.8",
+          "ParejasCartas-Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        }
+      },
       "ParejasCartas-Entities/1.0.0": {
         "type": "project",
-        "framework": "Unsupported,Version=v0.0",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
         "compile": {
           "bin/placeholder/ParejasCartas-Entities.dll": {}
         },
@@ -2374,7 +2464,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.16299/win10-x64-aot": {
+    "UAP,Version=v10.0.17763/win10-x64-aot": {
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -2862,9 +2952,10 @@
       },
       "ParejasCartas-BL/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.15063",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "ParejasCartas-DAL": "1.0.0",
           "ParejasCartas-Entities": "1.0.0"
         },
         "compile": {
@@ -2874,9 +2965,26 @@
           "bin/placeholder/ParejasCartas-BL.dll": {}
         }
       },
+      "ParejasCartas-DAL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.8",
+          "ParejasCartas-Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        }
+      },
       "ParejasCartas-Entities/1.0.0": {
         "type": "project",
-        "framework": "Unsupported,Version=v0.0",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
         "compile": {
           "bin/placeholder/ParejasCartas-Entities.dll": {}
         },
@@ -2885,7 +2993,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.16299/win10-x86": {
+    "UAP,Version=v10.0.17763/win10-x86": {
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -3372,9 +3480,10 @@
       },
       "ParejasCartas-BL/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.15063",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "ParejasCartas-DAL": "1.0.0",
           "ParejasCartas-Entities": "1.0.0"
         },
         "compile": {
@@ -3384,9 +3493,26 @@
           "bin/placeholder/ParejasCartas-BL.dll": {}
         }
       },
+      "ParejasCartas-DAL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.8",
+          "ParejasCartas-Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        }
+      },
       "ParejasCartas-Entities/1.0.0": {
         "type": "project",
-        "framework": "Unsupported,Version=v0.0",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
         "compile": {
           "bin/placeholder/ParejasCartas-Entities.dll": {}
         },
@@ -3395,7 +3521,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.16299/win10-x86-aot": {
+    "UAP,Version=v10.0.17763/win10-x86-aot": {
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -3883,9 +4009,10 @@
       },
       "ParejasCartas-BL/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.15063",
+        "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "ParejasCartas-DAL": "1.0.0",
           "ParejasCartas-Entities": "1.0.0"
         },
         "compile": {
@@ -3895,9 +4022,26 @@
           "bin/placeholder/ParejasCartas-BL.dll": {}
         }
       },
+      "ParejasCartas-DAL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.8",
+          "ParejasCartas-Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParejasCartas-DAL.dll": {}
+        }
+      },
       "ParejasCartas-Entities/1.0.0": {
         "type": "project",
-        "framework": "Unsupported,Version=v0.0",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9"
+        },
         "compile": {
           "bin/placeholder/ParejasCartas-Entities.dll": {}
         },
@@ -8340,6 +8484,11 @@
       "path": "../ParejasCartas-BL/ParejasCartas-BL.csproj",
       "msbuildProject": "../ParejasCartas-BL/ParejasCartas-BL.csproj"
     },
+    "ParejasCartas-DAL/1.0.0": {
+      "type": "project",
+      "path": "../ParejasCartas-DAL/ParejasCartas-DAL.csproj",
+      "msbuildProject": "../ParejasCartas-DAL/ParejasCartas-DAL.csproj"
+    },
     "ParejasCartas-Entities/1.0.0": {
       "type": "project",
       "path": "../ParejasCartas-Entities/ParejasCartas-Entities.csproj",
@@ -8347,7 +8496,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "UAP,Version=v10.0.16299": [
+    "UAP,Version=v10.0.17763": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.9",
       "ParejasCartas-BL >= 1.0.0",
       "ParejasCartas-Entities >= 1.0.0"
@@ -8375,14 +8524,14 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "uap10.0.16299"
+        "uap10.0.17763"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "uap10.0.16299": {
+        "uap10.0.17763": {
           "projectReferences": {
             "D:\\Ejercicios\\Github\\ParejasToWapa\\ParejasCartas\\ParejasCartas-BL\\ParejasCartas-BL.csproj": {
               "projectPath": "D:\\Ejercicios\\Github\\ParejasToWapa\\ParejasCartas\\ParejasCartas-BL\\ParejasCartas-BL.csproj"
@@ -8395,7 +8544,7 @@
       }
     },
     "frameworks": {
-      "uap10.0.16299": {
+      "uap10.0.17763": {
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
@@ -8432,79 +8581,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "El proyecto ParejasCartas-Entities no es compatible con uap10.0.16299 (UAP,Version=v10.0.16299). El proyecto ParejasCartas-Entities admite: uap10.0.17763 (UAP,Version=v10.0.17763)",
-      "libraryId": "ParejasCartas-Entities",
-      "targetGraphs": [
-        "UAP,Version=v10.0.16299"
-      ]
-    },
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "El proyecto ParejasCartas-Entities no es compatible con uap10.0.16299 (UAP,Version=v10.0.16299) / win10-arm. El proyecto ParejasCartas-Entities admite: uap10.0.17763 (UAP,Version=v10.0.17763)",
-      "libraryId": "ParejasCartas-Entities",
-      "targetGraphs": [
-        "UAP,Version=v10.0.16299/win10-arm"
-      ]
-    },
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "El proyecto ParejasCartas-Entities no es compatible con uap10.0.16299 (UAP,Version=v10.0.16299) / win10-arm-aot. El proyecto ParejasCartas-Entities admite: uap10.0.17763 (UAP,Version=v10.0.17763)",
-      "libraryId": "ParejasCartas-Entities",
-      "targetGraphs": [
-        "UAP,Version=v10.0.16299/win10-arm-aot"
-      ]
-    },
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "El proyecto ParejasCartas-Entities no es compatible con uap10.0.16299 (UAP,Version=v10.0.16299) / win10-arm64-aot. El proyecto ParejasCartas-Entities admite: uap10.0.17763 (UAP,Version=v10.0.17763)",
-      "libraryId": "ParejasCartas-Entities",
-      "targetGraphs": [
-        "UAP,Version=v10.0.16299/win10-arm64-aot"
-      ]
-    },
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "El proyecto ParejasCartas-Entities no es compatible con uap10.0.16299 (UAP,Version=v10.0.16299) / win10-x64. El proyecto ParejasCartas-Entities admite: uap10.0.17763 (UAP,Version=v10.0.17763)",
-      "libraryId": "ParejasCartas-Entities",
-      "targetGraphs": [
-        "UAP,Version=v10.0.16299/win10-x64"
-      ]
-    },
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "El proyecto ParejasCartas-Entities no es compatible con uap10.0.16299 (UAP,Version=v10.0.16299) / win10-x64-aot. El proyecto ParejasCartas-Entities admite: uap10.0.17763 (UAP,Version=v10.0.17763)",
-      "libraryId": "ParejasCartas-Entities",
-      "targetGraphs": [
-        "UAP,Version=v10.0.16299/win10-x64-aot"
-      ]
-    },
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "El proyecto ParejasCartas-Entities no es compatible con uap10.0.16299 (UAP,Version=v10.0.16299) / win10-x86. El proyecto ParejasCartas-Entities admite: uap10.0.17763 (UAP,Version=v10.0.17763)",
-      "libraryId": "ParejasCartas-Entities",
-      "targetGraphs": [
-        "UAP,Version=v10.0.16299/win10-x86"
-      ]
-    },
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "El proyecto ParejasCartas-Entities no es compatible con uap10.0.16299 (UAP,Version=v10.0.16299) / win10-x86-aot. El proyecto ParejasCartas-Entities admite: uap10.0.17763 (UAP,Version=v10.0.17763)",
-      "libraryId": "ParejasCartas-Entities",
-      "targetGraphs": [
-        "UAP,Version=v10.0.16299/win10-x86-aot"
-      ]
-    }
-  ]
+  }
 }

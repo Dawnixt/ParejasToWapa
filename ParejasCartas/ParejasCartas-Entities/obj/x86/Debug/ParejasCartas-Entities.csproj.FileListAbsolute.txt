@@ -22,6 +22,8 @@ D:\Ejercicios\Github\DI19-20\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\
 D:\Ejercicios\Github\DI19-20\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\qualifiers.txt
 D:\Ejercicios\Github\DI19-20\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Ejercicios\Github\DI19-20\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\ParejasCartas-Entities.pdb
+D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\priconfig.xml.intermediate
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\bin\x86\Debug\ParejasCartas-Entities.dll
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\bin\x86\Debug\ParejasCartas-Entities.pdb
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\bin\x86\Debug\ParejasCartas-Entities.pri
@@ -30,9 +32,7 @@ D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\ParejasCartas-Entities.csproj.CoreCompileInputs.cache
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\ParejasCartas-Entities.csproj.CopyComplete
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\ParejasCartas-Entities.dll
-D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\ParejasCartas-Entities.pdb
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\priconfig.xml
-D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\priconfig.xml.intermediate
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\unfiltered.layout.resfiles
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\filtered.layout.resfiles
