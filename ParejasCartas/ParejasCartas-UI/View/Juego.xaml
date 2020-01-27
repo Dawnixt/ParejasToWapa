@@ -5,11 +5,15 @@
     xmlns:local="using:ParejasCartas_UI.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:vm
+    xmlns:vm ="using:ParejasCartas_UI.ViewModels"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <RelativePanel>
+    <Page.DataContext>
+        <vm:clsJuegoVM></vm:clsJuegoVM>
+    </Page.DataContext>
 
+    <RelativePanel>
+        
     </RelativePanel>
 </Page>
