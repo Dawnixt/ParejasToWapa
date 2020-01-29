@@ -21,8 +21,9 @@ namespace ParejasCartas_UI.Models
             _volteada = false;
         }
 
-        public clsCarta(string imagenReverso)
+        public clsCarta(int id,string imagenReverso)
         {
+            _id = id;
             _imagenReverso = imagenReverso;
             _imagenAnverso = "ms-appx:///Assets/yu-gi-oh-standard-card-back-sleeves.jpg";
             _volteada = false;

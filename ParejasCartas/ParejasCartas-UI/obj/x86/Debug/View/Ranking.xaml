@@ -15,7 +15,7 @@
     
     <RelativePanel>
         <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" FontSize="40" FontStyle="Italic" Margin="0,50,0,0">RANKING</TextBlock>
-        <ListView x:ConnectionId='2' BorderBrush="LightGray" Background="LightGray" Name="ListaPuntuaciones" ItemsSource="{Binding Path=ListadoPuntuaciones , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True">
+        <ListView x:ConnectionId='2' RelativePanel.AlignBottomWithPanel="True" Margin="12"  BorderBrush="LightGray" Background="LightGray" Name="ListaPuntuaciones" ItemsSource="{Binding Path=ListadoPuntuaciones , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -24,6 +24,7 @@
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
+            <!--TODO Una zona para poner tu puntuacion-->
         </ListView>
     </RelativePanel>
 </Page>

@@ -1,0 +1,306 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-UI\\ParejasCartas-UI.csproj": {}
+  },
+  "projects": {
+    "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-BL\\ParejasCartas-BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-BL\\ParejasCartas-BL.csproj",
+        "projectName": "ParejasCartas-BL",
+        "projectPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-BL\\ParejasCartas-BL.csproj",
+        "packagesPath": "C:\\Users\\Dawnixt\\.nuget\\packages\\",
+        "outputPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-BL\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dawnixt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.17763"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.17763": {
+            "projectReferences": {
+              "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-DAL\\ParejasCartas-DAL.csproj": {
+                "projectPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-DAL\\ParejasCartas-DAL.csproj"
+              },
+              "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-Entities\\ParejasCartas-Entities.csproj": {
+                "projectPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-Entities\\ParejasCartas-Entities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.17763": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.9, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-DAL\\ParejasCartas-DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-DAL\\ParejasCartas-DAL.csproj",
+        "projectName": "ParejasCartas-DAL",
+        "projectPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-DAL\\ParejasCartas-DAL.csproj",
+        "packagesPath": "C:\\Users\\Dawnixt\\.nuget\\packages\\",
+        "outputPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dawnixt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.18362"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.18362": {
+            "projectReferences": {
+              "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-Entities\\ParejasCartas-Entities.csproj": {
+                "projectPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-Entities\\ParejasCartas-Entities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.18362": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.8, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-Entities\\ParejasCartas-Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-Entities\\ParejasCartas-Entities.csproj",
+        "projectName": "ParejasCartas-Entities",
+        "projectPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-Entities\\ParejasCartas-Entities.csproj",
+        "packagesPath": "C:\\Users\\Dawnixt\\.nuget\\packages\\",
+        "outputPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dawnixt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.17763"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.17763": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.17763": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.9, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-UI\\ParejasCartas-UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-UI\\ParejasCartas-UI.csproj",
+        "projectName": "ParejasCartas-UI",
+        "projectPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-UI\\ParejasCartas-UI.csproj",
+        "packagesPath": "C:\\Users\\Dawnixt\\.nuget\\packages\\",
+        "outputPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-UI\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dawnixt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.17763"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.17763": {
+            "projectReferences": {
+              "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-BL\\ParejasCartas-BL.csproj": {
+                "projectPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-BL\\ParejasCartas-BL.csproj"
+              },
+              "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-Entities\\ParejasCartas-Entities.csproj": {
+                "projectPath": "D:\\Escritorio\\Githabu\\ParejasToWapa\\ParejasToWapa\\ParejasCartas\\ParejasCartas-Entities\\ParejasCartas-Entities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.17763": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.9, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

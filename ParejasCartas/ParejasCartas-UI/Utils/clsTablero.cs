@@ -21,7 +21,12 @@ namespace ParejasCartas_UI.Utils
         {
             List<clsCarta> cartas = new List<clsCarta>();
 
-
+            cartas.Add(new clsCarta());
+            cartas.Add(new clsCarta());
+            cartas.Add(new clsCarta());
+            cartas.Add(new clsCarta());
+            cartas.Add(new clsCarta());
+            cartas.Add(new clsCarta());
 
             return cartas;
         }
