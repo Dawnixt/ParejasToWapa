@@ -97,6 +97,7 @@ namespace ParejasCartas_UI.ViewModels
             }
             set
             {
+                //TODO Hacer comparacion y luego borrar
                 _cartaSeleccionada2 = value;
 
                 if (!_cartaSeleccionada2.Volteada)
