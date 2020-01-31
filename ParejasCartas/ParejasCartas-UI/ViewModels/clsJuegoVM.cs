@@ -1,4 +1,5 @@
 ﻿using ParejasCartas_UI.Models;
+using ParejasCartas_UI.Utils;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -17,10 +18,12 @@ namespace ParejasCartas_UI.ViewModels
         private string _nombreJugador;
         private clsCarta _cartaSeleccionada1;
         private clsCarta _cartaSeleccionada2;
+        private bool _carta1Seleccionada;
 
         public clsJuegoVM()
         {
-
+            clsTablero tablero = new clsTablero();
+            _tablero = new ObservableCollection<clsCarta>(tablero.getTablero());
         }
 
         //Cosas del NotifyPropertyChanged
@@ -63,7 +66,26 @@ namespace ParejasCartas_UI.ViewModels
             }
             set
             {
-                _cartaSeleccionada1 = value;
+                if (!_carta1Seleccionada)
+                {
+                    _cartaSeleccionada1 = value;
+
+                    if (!_cartaSeleccionada1.Volteada)
+                    {
+                        _cartaSeleccionada1.Volteada = true;
+                        _carta1Seleccionada = true;
+                    }
+                    else
+                    {
+                        _cartaSeleccionada1.Volteada = false;
+                        _carta1Seleccionada = false;
+                    }
+                }
+                else
+                {
+                    CartaSeleccionada2 = value;
+                }
+                
             }
         }
 
@@ -76,6 +98,30 @@ namespace ParejasCartas_UI.ViewModels
             set
             {
                 _cartaSeleccionada2 = value;
+
+                if (!_cartaSeleccionada2.Volteada)
+                {
+                    _cartaSeleccionada2.Volteada = true;
+                    
+                }
+                else
+                {
+                    _cartaSeleccionada2.Volteada = false;
+                    
+                }
+                _carta1Seleccionada = false;
+            }
+        }
+
+        public bool Carta1Seleccionada
+        {
+            get
+            {
+                return _carta1Seleccionada;
+            }
+            set
+            {
+                _carta1Seleccionada = value;
             }
         }
 

@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>364D30D4B37F250AF9ECB366A6B4339EA8E04C088C7D75D7A15DEAF192CF8422</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>C0B4208A3603B138CE5478C8ECEA19B75A247FFF0846EA6BB72F81D7A90030B7</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>b835d25c-e687-4205-8f89-cd948d5eafd6_1.0.0.0_x86__kshhw9q2xyf2c</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>b835d25c-e687-4205-8f89-cd948d5eafd6_kshhw9q2xyf2c!App</RegisteredUserModeAppID>
     <RegisteredPackageID>b835d25c-e687-4205-8f89-cd948d5eafd6</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-27T17:58:00.080</Modified>
+      <Modified>2020-01-31T00:41:56.644</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\ParejasCartas-UI.exe">
       <PackagePath>entrypoint\ParejasCartas-UI.exe</PackagePath>
-      <Modified>2020-01-27T17:57:56.886</Modified>
+      <Modified>2020-01-31T00:41:54.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -44,15 +44,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-BL\bin\x86\Debug\ParejasCartas-BL.dll">
       <PackagePath>ParejasCartas-BL.dll</PackagePath>
-      <Modified>2020-01-27T17:57:51.139</Modified>
+      <Modified>2020-01-30T21:27:00.936</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\bin\x86\Debug\ParejasCartas-Entities.dll">
       <PackagePath>ParejasCartas-Entities.dll</PackagePath>
-      <Modified>2020-01-27T17:57:48.667</Modified>
+      <Modified>2020-01-30T21:26:58.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-BL\bin\x86\Debug\ParejasCartas-DAL.dll">
       <PackagePath>ParejasCartas-DAL.dll</PackagePath>
-      <Modified>2020-01-27T17:57:50.285</Modified>
+      <Modified>2020-01-30T21:26:59.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -61,6 +61,30 @@
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\66628110-juego-texto-goma-sello-sello-marca-de-agua-título-dentro-de-banner-rectangular-con-diseño-grunge-y-textur.jpg">
       <PackagePath>Assets\66628110-juego-texto-goma-sello-sello-marca-de-agua-título-dentro-de-banner-rectangular-con-diseño-grunge-y-textur.jpg</PackagePath>
       <Modified>2020-01-26T02:08:33.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Adorable.jpg">
+      <PackagePath>Assets\Adorable.jpg</PackagePath>
+      <Modified>2020-01-29T00:05:44.232</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\ChaldeaPark.jpg">
+      <PackagePath>Assets\ChaldeaPark.jpg</PackagePath>
+      <Modified>2020-01-30T19:51:26.031</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\DeathHalloween.jpg">
+      <PackagePath>Assets\DeathHalloween.jpg</PackagePath>
+      <Modified>2020-01-28T23:59:45.965</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Emos.jpg">
+      <PackagePath>Assets\Emos.jpg</PackagePath>
+      <Modified>2020-01-30T19:34:55.021</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\KaminaJimaru.jpg">
+      <PackagePath>Assets\KaminaJimaru.jpg</PackagePath>
+      <Modified>2020-01-29T00:02:03.938</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\meme.jpg">
+      <PackagePath>Assets\meme.jpg</PackagePath>
+      <Modified>2020-01-29T00:05:30.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\yu-gi-oh-standard-card-back-sleeves.jpg">
       <PackagePath>Assets\yu-gi-oh-standard-card-back-sleeves.jpg</PackagePath>
@@ -106,23 +130,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\ParejasCartas-UI.xr.xml">
       <PackagePath>ParejasCartas-UI.xr.xml</PackagePath>
-      <Modified>2020-01-27T17:57:56.628</Modified>
+      <Modified>2020-01-30T23:45:42.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-01-27T17:57:56.697</Modified>
+      <Modified>2020-01-31T00:41:54.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\View\Juego.xbf">
       <PackagePath>View\Juego.xbf</PackagePath>
-      <Modified>2020-01-27T17:57:56.697</Modified>
+      <Modified>2020-01-31T00:41:54.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
-      <Modified>2020-01-27T17:57:56.697</Modified>
+      <Modified>2020-01-31T00:41:54.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\View\Ranking.xbf">
       <PackagePath>View\Ranking.xbf</PackagePath>
-      <Modified>2020-01-27T17:57:56.697</Modified>
+      <Modified>2020-01-31T00:41:54.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -130,11 +154,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-01-27T17:57:57.449</Modified>
+      <Modified>2020-01-30T21:27:06.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\Core\ParejasCartas-UI.exe">
       <PackagePath>ParejasCartas-UI.exe</PackagePath>
-      <Modified>2020-01-27T17:58:00.060</Modified>
+      <Modified>2020-01-31T00:41:56.638</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

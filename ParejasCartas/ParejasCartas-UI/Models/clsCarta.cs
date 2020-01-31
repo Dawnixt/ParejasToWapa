@@ -26,7 +26,7 @@ namespace ParejasCartas_UI.Models
             _id = id;
             _imagenReverso = imagenReverso;
             _imagenAnverso = "ms-appx:///Assets/yu-gi-oh-standard-card-back-sleeves.jpg";
-            _volteada = false;
+            Volteada = false;
         }
 
         public string ImagenAMostrar
@@ -80,7 +80,7 @@ namespace ParejasCartas_UI.Models
                     _imagenAMostrar = _imagenAnverso;
                 }
 
-
+                NotifyPropertyChanged("ImagenAMostrar");
             }
         }
 

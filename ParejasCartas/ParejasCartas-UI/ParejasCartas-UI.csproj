@@ -143,7 +143,9 @@
   <ItemGroup>
     <Content Include="Assets\66628110-juego-texto-goma-sello-sello-marca-de-agua-título-dentro-de-banner-rectangular-con-diseño-grunge-y-textur.jpg" />
     <Content Include="Assets\Adorable.jpg" />
+    <Content Include="Assets\ChaldeaPark.jpg" />
     <Content Include="Assets\DeathHalloween.jpg" />
+    <Content Include="Assets\Emos.jpg" />
     <Content Include="Assets\KaminaJimaru.jpg" />
     <Content Include="Assets\meme.jpg" />
     <Content Include="Assets\yu-gi-oh-standard-card-back-sleeves.jpg" />

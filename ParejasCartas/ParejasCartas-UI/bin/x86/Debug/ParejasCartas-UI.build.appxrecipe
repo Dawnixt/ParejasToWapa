@@ -46,6 +46,24 @@
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\66628110-juego-texto-goma-sello-sello-marca-de-agua-título-dentro-de-banner-rectangular-con-diseño-grunge-y-textur.jpg">
       <PackagePath>Assets\66628110-juego-texto-goma-sello-sello-marca-de-agua-título-dentro-de-banner-rectangular-con-diseño-grunge-y-textur.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Adorable.jpg">
+      <PackagePath>Assets\Adorable.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\ChaldeaPark.jpg">
+      <PackagePath>Assets\ChaldeaPark.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\DeathHalloween.jpg">
+      <PackagePath>Assets\DeathHalloween.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Emos.jpg">
+      <PackagePath>Assets\Emos.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\KaminaJimaru.jpg">
+      <PackagePath>Assets\KaminaJimaru.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\meme.jpg">
+      <PackagePath>Assets\meme.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\yu-gi-oh-standard-card-back-sleeves.jpg">
       <PackagePath>Assets\yu-gi-oh-standard-card-back-sleeves.jpg</PackagePath>
     </AppxPackagedFile>

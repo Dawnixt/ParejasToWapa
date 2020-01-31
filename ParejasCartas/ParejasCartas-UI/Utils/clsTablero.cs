@@ -21,12 +21,13 @@ namespace ParejasCartas_UI.Utils
         {
             List<clsCarta> cartas = new List<clsCarta>();
 
-            cartas.Add(new clsCarta());
-            cartas.Add(new clsCarta());
-            cartas.Add(new clsCarta());
-            cartas.Add(new clsCarta());
-            cartas.Add(new clsCarta());
-            cartas.Add(new clsCarta());
+            //TODO Esto pero aleatorio
+            cartas.Add(new clsCarta(1, "ms-appx:///Assets/Adorable.jpg"));
+            cartas.Add(new clsCarta(2, "ms-appx:///Assets/DeathHalloween.jpg"));
+            cartas.Add(new clsCarta(3, "ms-appx:///Assets/KaminaJimaru.jpg"));
+            cartas.Add(new clsCarta(4, "ms-appx:///Assets/meme.jpg"));
+            cartas.Add(new clsCarta(5, "ms-appx:///Assets/Emos.jpg"));
+            cartas.Add(new clsCarta(6, "ms-appx:///Assets/ChaldeaPark.jpg"));
 
             return cartas;
         }
