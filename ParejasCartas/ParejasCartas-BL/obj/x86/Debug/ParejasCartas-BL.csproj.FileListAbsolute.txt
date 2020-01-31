@@ -58,3 +58,4 @@ D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-BL\obj\x86\Debug\
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-BL\obj\x86\Debug\qualifiers.txt
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-BL\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-BL\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-BL\bin\x86\Debug\ParejasCartas-DAL.pri

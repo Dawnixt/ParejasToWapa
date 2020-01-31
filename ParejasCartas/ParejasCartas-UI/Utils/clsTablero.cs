@@ -21,13 +21,98 @@ namespace ParejasCartas_UI.Utils
         {
             List<clsCarta> cartas = new List<clsCarta>();
 
-            //TODO Esto pero aleatorio
-            cartas.Add(new clsCarta(1, "ms-appx:///Assets/Adorable.jpg"));
-            cartas.Add(new clsCarta(2, "ms-appx:///Assets/DeathHalloween.jpg"));
-            cartas.Add(new clsCarta(3, "ms-appx:///Assets/KaminaJimaru.jpg"));
-            cartas.Add(new clsCarta(4, "ms-appx:///Assets/meme.jpg"));
-            cartas.Add(new clsCarta(5, "ms-appx:///Assets/Emos.jpg"));
-            cartas.Add(new clsCarta(6, "ms-appx:///Assets/ChaldeaPark.jpg"));
+            int numero1 = 0;
+            int numero2 = 0;
+            int numero3 = 0;
+            int numero4 = 0;
+            int numero5 = 0;
+            int numero6 = 0;
+            int idCarta = 0;
+            Random cartaSiguiente = new Random();
+
+            //clsCarta carta1 = new clsCarta(1, "ms-appx:///Assets/Adorable.jpg");
+            //clsCarta carta2 = new clsCarta(2, "ms-appx:///Assets/DeathHalloween.jpg");
+            //clsCarta carta3 = new clsCarta(3, "ms-appx:///Assets/KaminaJimaru.jpg");
+            //clsCarta carta4 = new clsCarta(4, "ms-appx:///Assets/meme.jpg");
+            //clsCarta carta5 = new clsCarta(5, "ms-appx:///Assets/Emos.jpg");
+            //clsCarta carta6 = new clsCarta(6, "ms-appx:///Assets/ChaldeaPark.jpg");
+
+            for (int i = 0; i<12; i++)
+            {
+                
+                idCarta = cartaSiguiente.Next(1, 7);
+
+                switch (idCarta)
+                {
+                    case 1:
+                        if(numero1 < 2)
+                        {
+                            cartas.Add(new clsCarta(1, "ms-appx:///Assets/Adorable.jpg"));
+                            numero1++;
+                        }
+                        else
+                        {
+                            i--;
+                        }
+                        break;
+                    case 2:
+                        if (numero2 < 2)
+                        {
+                            cartas.Add(new clsCarta(2, "ms-appx:///Assets/DeathHalloween.jpg"));
+                            numero2++;
+                        }
+                        else
+                        {
+                            i--;
+                        }
+                        break;
+                    case 3:
+                        if (numero3 < 2)
+                        {
+                            cartas.Add(new clsCarta(3, "ms-appx:///Assets/KaminaJimaru.jpg"));
+                            numero3++;
+                        }
+                        else
+                        {
+                            i--;
+                        }
+                        break;
+                    case 4:
+                        if (numero4 < 2)
+                        {
+                            cartas.Add(new clsCarta(4, "ms-appx:///Assets/meme.jpg"));
+                            numero4++;
+                        }
+                        else
+                        {
+                            i--;
+                        }
+                        break;
+                    case 5:
+                        if (numero5 < 2)
+                        {
+                            cartas.Add(new clsCarta(5, "ms-appx:///Assets/Emos.jpg"));
+                            numero5++;
+                        }
+                        else
+                        {
+                            i--;
+                        }
+                        break;
+                    case 6:
+                        if (numero6 < 2)
+                        {
+                            cartas.Add(new clsCarta(6, "ms-appx:///Assets/ChaldeaPark.jpg"));
+                            numero6++;
+                        }
+                        else
+                        {
+                            i--;
+                        }
+                        break;
+                }
+
+            }
 
             return cartas;
         }
