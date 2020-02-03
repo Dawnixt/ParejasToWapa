@@ -12,18 +12,21 @@
     <Page.DataContext>
         <vm:clsJuegoVM></vm:clsJuegoVM>
     </Page.DataContext>
-
-    <GridView HorizontalAlignment="Center" VerticalAlignment="Center" SelectedItem="{Binding Path=CartaSeleccionada1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Path=Tablero}">
-        <GridView.ItemTemplate>
-            <DataTemplate>
-                <Image Width="200" Source="{Binding Path=ImagenAMostrar, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Image>
-            </DataTemplate>
-        </GridView.ItemTemplate>
-        <GridView.ItemsPanel>
-            <ItemsPanelTemplate>
-                <ItemsWrapGrid MaximumRowsOrColumns="4" Orientation="Horizontal" />
-            </ItemsPanelTemplate>
-        </GridView.ItemsPanel>
-    </GridView>
+    
+    <StackPanel>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20" Text="{Binding Path=Cronometro, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+        <GridView HorizontalAlignment="Center" VerticalAlignment="Center" SelectedItem="{Binding Path=CartaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Path=Tablero}">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Image Width="200" Source="{Binding Path=ImagenAMostrar, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Image>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid MaximumRowsOrColumns="4" Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+        </GridView>
+    </StackPanel>
 </Page>
 

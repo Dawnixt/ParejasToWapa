@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="CartaSeleccionada1" />
+    <RootPropertyPathName Name="CartaSeleccionada" />
     <RootPropertyPathName Name="Tablero" />
     <RootPropertyPathName Name="ImagenAMostrar" />
+    <RootPropertyPathName Name="Cronometro" />
     <RootPropertyPathName Name="ListadoPuntuaciones" />
     <RootPropertyPathName Name="Tiempo" />
     <RootPropertyPathName Name="Nombre" />
@@ -17,6 +18,19 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="ParejasCartas_UI.ViewModels.clsJuegoVM" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="Inlines" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
@@ -69,13 +83,6 @@
     </RootType>
     <RootType FullName="ParejasCartas_UI.MainPage" />
     <RootType FullName="ParejasCartas_UI.ViewModels.clsRankingVM" />
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="FontStyle" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Inlines" />
-      <RootProperty Name="Text" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
@@ -83,10 +90,6 @@
       <RootProperty Name="Background" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Orientation" />
-      <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="ParejasCartas_UI.View.Ranking" />
   </Roots.RootTypes>

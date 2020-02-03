@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>107-14</Machine>
-    <WindowsUser>dgordillo</WindowsUser>
+    <Machine>DESKTOP-G756AJ8</Machine>
+    <WindowsUser>Dawnixt</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b835d25c-e687-4205-8f89-cd948d5eafd6</PackageIdentityName>
     <PackageIdentityPublisher>CN=dgordillo</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>AA71A4E3D733261E99152D30BBDA0D8C976245E0690A29878F65515AF5E1101B</RegisteredManifestChecksum>
+    <LayoutDir>D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>C5CEBD28D01CE35DF93EFA0E31E81C314BD8B7BC148549EC24923DD93D6CD8DC</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>b835d25c-e687-4205-8f89-cd948d5eafd6_1.0.0.0_x86__kshhw9q2xyf2c</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>b835d25c-e687-4205-8f89-cd948d5eafd6_kshhw9q2xyf2c!App</RegisteredUserModeAppID>
     <RegisteredPackageID>b835d25c-e687-4205-8f89-cd948d5eafd6</RegisteredPackageID>
@@ -27,227 +27,227 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-31T13:00:15.031</Modified>
+      <Modified>2020-02-03T01:56:01.797</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\ParejasCartas-UI.exe">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\ParejasCartas-UI.exe">
       <PackagePath>entrypoint\ParejasCartas-UI.exe</PackagePath>
-      <Modified>2020-01-31T13:00:13.602</Modified>
+      <Modified>2020-02-03T01:56:00.233</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dgordillo\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-07-22T12:01:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-BL\bin\x86\Debug\ParejasCartas-BL.dll">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-BL\bin\x86\Debug\ParejasCartas-BL.dll">
       <PackagePath>ParejasCartas-BL.dll</PackagePath>
-      <Modified>2020-01-31T12:03:25.619</Modified>
+      <Modified>2020-02-02T18:26:19.197</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\bin\x86\Debug\ParejasCartas-Entities.dll">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\bin\x86\Debug\ParejasCartas-Entities.dll">
       <PackagePath>ParejasCartas-Entities.dll</PackagePath>
-      <Modified>2020-01-31T09:12:33.439</Modified>
+      <Modified>2020-02-01T16:21:27.886</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-BL\bin\x86\Debug\ParejasCartas-DAL.dll">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-BL\bin\x86\Debug\ParejasCartas-DAL.dll">
       <PackagePath>ParejasCartas-DAL.dll</PackagePath>
-      <Modified>2020-01-31T12:03:24.051</Modified>
+      <Modified>2020-02-02T18:26:17.378</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2018-10-23T00:33:40.000</Modified>
+      <Modified>2019-03-18T17:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\66628110-juego-texto-goma-sello-sello-marca-de-agua-título-dentro-de-banner-rectangular-con-diseño-grunge-y-textur.jpg">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\66628110-juego-texto-goma-sello-sello-marca-de-agua-título-dentro-de-banner-rectangular-con-diseño-grunge-y-textur.jpg">
       <PackagePath>Assets\66628110-juego-texto-goma-sello-sello-marca-de-agua-título-dentro-de-banner-rectangular-con-diseño-grunge-y-textur.jpg</PackagePath>
-      <Modified>2020-01-24T08:22:04.427</Modified>
+      <Modified>2020-01-26T02:08:33.929</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Adorable.jpg">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Adorable.jpg">
       <PackagePath>Assets\Adorable.jpg</PackagePath>
-      <Modified>2020-01-29T09:16:53.751</Modified>
+      <Modified>2020-01-29T00:05:44.232</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\ChaldeaPark.jpg">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\ChaldeaPark.jpg">
       <PackagePath>Assets\ChaldeaPark.jpg</PackagePath>
-      <Modified>2020-01-31T07:20:55.525</Modified>
+      <Modified>2020-01-30T19:51:26.031</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\DeathHalloween.jpg">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\DeathHalloween.jpg">
       <PackagePath>Assets\DeathHalloween.jpg</PackagePath>
-      <Modified>2020-01-29T09:16:53.758</Modified>
+      <Modified>2020-01-28T23:59:45.965</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Emos.jpg">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Emos.jpg">
       <PackagePath>Assets\Emos.jpg</PackagePath>
-      <Modified>2020-01-31T07:20:55.517</Modified>
+      <Modified>2020-01-30T19:34:55.021</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\KaminaJimaru.jpg">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\KaminaJimaru.jpg">
       <PackagePath>Assets\KaminaJimaru.jpg</PackagePath>
-      <Modified>2020-01-29T09:16:53.764</Modified>
+      <Modified>2020-01-29T00:02:03.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\meme.jpg">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\meme.jpg">
       <PackagePath>Assets\meme.jpg</PackagePath>
-      <Modified>2020-01-29T09:16:53.817</Modified>
+      <Modified>2020-01-29T00:05:30.066</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\yu-gi-oh-standard-card-back-sleeves.jpg">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\yu-gi-oh-standard-card-back-sleeves.jpg">
       <PackagePath>Assets\yu-gi-oh-standard-card-back-sleeves.jpg</PackagePath>
-      <Modified>2020-01-24T08:20:58.198</Modified>
+      <Modified>2020-01-26T02:08:33.940</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-01-20T12:58:13.007</Modified>
+      <Modified>2020-01-26T02:08:34.133</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-01-20T10:13:40.175</Modified>
+      <Modified>2020-01-26T02:08:33.929</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-20T10:13:40.175</Modified>
+      <Modified>2020-01-26T02:08:33.930</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-20T10:13:40.175</Modified>
+      <Modified>2020-01-26T02:08:33.933</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-20T10:13:40.175</Modified>
+      <Modified>2020-01-26T02:08:33.933</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-20T10:13:40.175</Modified>
+      <Modified>2020-01-26T02:08:33.935</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-20T10:13:40.175</Modified>
+      <Modified>2020-01-26T02:08:33.937</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-20T10:13:40.175</Modified>
+      <Modified>2020-01-26T02:08:33.937</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\ParejasCartas-UI.xr.xml">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\ParejasCartas-UI.xr.xml">
       <PackagePath>ParejasCartas-UI.xr.xml</PackagePath>
-      <Modified>2020-01-31T07:20:55.827</Modified>
+      <Modified>2020-02-03T01:51:23.454</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-01-31T12:49:34.014</Modified>
+      <Modified>2020-02-03T01:56:00.111</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\View\Juego.xbf">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\View\Juego.xbf">
       <PackagePath>View\Juego.xbf</PackagePath>
-      <Modified>2020-01-31T12:49:34.014</Modified>
+      <Modified>2020-02-03T01:56:00.111</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\View\MainPage.xbf">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
-      <Modified>2020-01-31T12:49:34.014</Modified>
+      <Modified>2020-02-03T01:56:00.111</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\View\Ranking.xbf">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\View\Ranking.xbf">
       <PackagePath>View\Ranking.xbf</PackagePath>
-      <Modified>2020-01-31T12:49:34.015</Modified>
+      <Modified>2020-02-03T01:56:00.111</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2018-10-22T23:44:28.000</Modified>
+      <Modified>2019-03-18T16:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-01-31T12:03:32.682</Modified>
+      <Modified>2020-02-02T18:26:25.073</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\Core\ParejasCartas-UI.exe">
+    <AppxPackagedFile Include="D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\Core\ParejasCartas-UI.exe">
       <PackagePath>ParejasCartas-UI.exe</PackagePath>
-      <Modified>2020-01-31T13:00:15.025</Modified>
+      <Modified>2020-02-03T01:56:01.795</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Users\dgordillo\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\dgordillo\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\dgordillo\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\dgordillo\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\dgordillo\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\dgordillo\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\dgordillo\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.27909.0</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\dgordillo\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\dgordillo\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.27909.0</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\dgordillo\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\dgordillo\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.27909.0</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\dgordillo\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27023.1</Version>
+      <Version>14.0.27323.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27023.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27023.1</Version>
+      <Version>14.0.27323.0</Version>
       <Architecture>ARM64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27023.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27023.1</Version>
+      <Version>14.0.27323.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27023.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27023.1</Version>
+      <Version>14.0.27323.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27023.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
