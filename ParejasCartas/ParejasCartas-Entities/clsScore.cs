@@ -21,6 +21,12 @@ namespace ParejasCartas_Entities
             _nombre = "";
         }
 
+        public clsScore(string tiempo, string nombre)
+        {
+            _tiempo = tiempo;
+            _nombre = nombre;
+        }
+
         #region Propiedades publicas
 
         public String Nombre

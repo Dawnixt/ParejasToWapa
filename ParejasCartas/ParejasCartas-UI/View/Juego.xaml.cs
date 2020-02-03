@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParejasCartas_UI.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,20 @@ namespace ParejasCartas_UI.View
         public Juego()
         {
             this.InitializeComponent();
+            this.ViewModel = (clsJuegoVM)this.DataContext;
+        }
+        public clsJuegoVM ViewModel { get; }
+
+        private async void AppBarButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            bool result;
+            result = await ViewModel.mostarMensajeSalida();
+
+            if(result == true)
+            {
+                this.Frame.Navigate(typeof(MainPage));
+            }
+
         }
     }
 }

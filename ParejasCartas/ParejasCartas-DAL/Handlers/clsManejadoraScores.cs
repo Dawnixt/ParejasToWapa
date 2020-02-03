@@ -20,7 +20,7 @@ namespace ParejasCartas_DAL.Handlers
         /// Esta funcion nos permite introducir una puntuacion en la base de datos
         /// </summary>
         /// <param name="puntuacion">Es el tiempo y el nombre del usuario</param>
-        /// <returns></returns>
+        /// <returns>El numero de filas que altera</returns>
         public int insertarPuntuacion(clsScore puntuacion)
         {
             int filasCambiadas = 0;
@@ -34,9 +34,9 @@ namespace ParejasCartas_DAL.Handlers
                 connection = new SqlConnection();
 
                 connection = myConnection.getConnection();
-                command.CommandText = "INSERT INTO Scores VALUES(@nombreJugador,@tiempo)";
-                command.Parameters.Add("@nombreJugador", System.Data.SqlDbType.VarChar).Value = puntuacion.Nombre;
-                command.Parameters.Add("@tiempo", System.Data.SqlDbType.VarChar).Value = puntuacion.Tiempo;
+                command.CommandText = "INSERT INTO dbo.Scores (nombre,tiempo) VALUES(@nombreJugador,@tiempo)";
+                command.Parameters.Add("@nombreJugador", System.Data.SqlDbType.VarChar).Value = (string)puntuacion.Nombre;
+                command.Parameters.Add("@tiempo", System.Data.SqlDbType.VarChar).Value = (string) puntuacion.Tiempo;
 
                 command.Connection = connection;
                 filasCambiadas = command.ExecuteNonQuery();

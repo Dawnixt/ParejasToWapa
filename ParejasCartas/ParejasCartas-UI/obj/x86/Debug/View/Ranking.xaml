@@ -14,14 +14,34 @@
     </Page.DataContext>
     
     <RelativePanel>
+        <AppBarButton x:ConnectionId='2' Name="Volver" Icon="Back"                       ></AppBarButton>
         <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" FontSize="40" FontStyle="Italic" Margin="0,50,0,0">RANKING</TextBlock>
-        <ListView x:ConnectionId='2' RelativePanel.AlignBottomWithPanel="True" Margin="12"  BorderBrush="LightGray" Background="LightGray" Name="ListaPuntuaciones" ItemsSource="{Binding Path=ListadoPuntuaciones , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True">
+        <!--<GridView Width="Auto" ItemsSource="{Binding Path=ListadoPuntuaciones, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="12"  BorderBrush="LightGray" Background="LightGray" Name="ListaPuntuaciones" RelativePanel.AlignVerticalCenterWithPanel="True">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <RelativePanel Width="Auto">
+                        <TextBlock Name="nombre" Text="{Binding Path=Nombre}" Padding="0,0,10,0" Grid.Column="0" RelativePanel.LeftOf="Tiempo" TextAlignment="Right" ></TextBlock>
+                        <TextBlock Name="Tiempo" Width="Auto" Text="{Binding Path=Tiempo}" Grid.Column="1"  TextAlignment="Right" ></TextBlock>
+                    </RelativePanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid MaximumRowsOrColumns="1" Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+        </GridView>-->
+        <ListView x:ConnectionId='3'  RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="12"  BorderBrush="LightGray" Background="LightGray" Name="ListaPuntuaciones" ItemsSource="{Binding Path=ListadoPuntuaciones , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignVerticalCenterWithPanel="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Margin="0,0,20,0" Text="{Binding Path=Nombre}"></TextBlock>
-                        <TextBlock Text="{Binding Path=Tiempo}"></TextBlock>
-                    </StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Path=Nombre}" Grid.Column="0" TextAlignment="Right" ></TextBlock>
+                        <TextBlock Text="{Binding Path=Tiempo}" Grid.Column="1" TextAlignment="Right" ></TextBlock>
+                    </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
             <!--TODO Una zona para poner tu puntuacion-->

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="TableroHabilitado" />
     <RootPropertyPathName Name="CartaSeleccionada" />
     <RootPropertyPathName Name="Tablero" />
     <RootPropertyPathName Name="ImagenAMostrar" />
-    <RootPropertyPathName Name="Cronometro" />
-    <RootPropertyPathName Name="ListadoPuntuaciones" />
     <RootPropertyPathName Name="Tiempo" />
+    <RootPropertyPathName Name="ListadoPuntuaciones" />
     <RootPropertyPathName Name="Nombre" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -18,11 +18,22 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="ParejasCartas_UI.ViewModels.clsJuegoVM" />
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Children" />
-      <RootProperty Name="Orientation" />
+      <RootMethod Name="GetAlignHorizontalCenterWithPanel" />
+      <RootMethod Name="SetAlignHorizontalCenterWithPanel" />
+      <RootMethod Name="GetBelow" />
+      <RootMethod Name="SetBelow" />
+      <RootMethod Name="GetAlignVerticalCenterWithPanel" />
+      <RootMethod Name="SetAlignVerticalCenterWithPanel" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Icon" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Name" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
@@ -30,8 +41,10 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontStyle" />
       <RootProperty Name="Inlines" />
+      <RootProperty Name="TextAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
+      <RootProperty Name="IsEnabled" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="SelectedItem" />
@@ -41,8 +54,8 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Path" />
-      <RootProperty Name="Mode" />
       <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
@@ -60,17 +73,6 @@
       <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="ParejasCartas_UI.View.Juego" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
-      <RootProperty Name="Children" />
-      <RootMethod Name="GetAlignHorizontalCenterWithPanel" />
-      <RootMethod Name="SetAlignHorizontalCenterWithPanel" />
-      <RootMethod Name="GetAlignVerticalCenterWithPanel" />
-      <RootMethod Name="SetAlignVerticalCenterWithPanel" />
-      <RootMethod Name="GetBelow" />
-      <RootMethod Name="SetBelow" />
-      <RootMethod Name="GetAlignBottomWithPanel" />
-      <RootMethod Name="SetAlignBottomWithPanel" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Name" />
       <RootProperty Name="Width" />
@@ -90,6 +92,15 @@
       <RootProperty Name="Background" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="ParejasCartas_UI.View.Ranking" />
   </Roots.RootTypes>

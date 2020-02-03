@@ -40,11 +40,6 @@ namespace ParejasCartas_DAL.Connection
             this.user = "prueba";
             this.pass = "123";
 
-            //this.server = "pablot90.database.windows.net";
-            //this.dataBase = "PersonasDB";
-            //this.user = "pablo";
-            //this.pass = "Mitesoro123";
-
         }
         //Con parámetros por si quisiera cambiar las conexiones
         public clsMyConnection(String server, String database, String user, String pass)

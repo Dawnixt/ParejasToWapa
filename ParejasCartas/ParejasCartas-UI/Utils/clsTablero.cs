@@ -30,13 +30,6 @@ namespace ParejasCartas_UI.Utils
             int idCarta = 0;
             Random cartaSiguiente = new Random();
 
-            //clsCarta carta1 = new clsCarta(1, "ms-appx:///Assets/Adorable.jpg");
-            //clsCarta carta2 = new clsCarta(2, "ms-appx:///Assets/DeathHalloween.jpg");
-            //clsCarta carta3 = new clsCarta(3, "ms-appx:///Assets/KaminaJimaru.jpg");
-            //clsCarta carta4 = new clsCarta(4, "ms-appx:///Assets/meme.jpg");
-            //clsCarta carta5 = new clsCarta(5, "ms-appx:///Assets/Emos.jpg");
-            //clsCarta carta6 = new clsCarta(6, "ms-appx:///Assets/ChaldeaPark.jpg");
-
             for (int i = 0; i<12; i++)
             {
                 

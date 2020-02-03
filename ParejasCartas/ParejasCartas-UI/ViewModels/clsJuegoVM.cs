@@ -1,4 +1,6 @@
-﻿using ParejasCartas_UI.Models;
+﻿using ParejasCartas_BL.Handlers;
+using ParejasCartas_Entities;
+using ParejasCartas_UI.Models;
 using ParejasCartas_UI.Utils;
 using System;
 using System.Collections.Generic;
@@ -14,54 +16,38 @@ namespace ParejasCartas_UI.ViewModels
 {
     public class clsJuegoVM : INotifyPropertyChanged
     {
-        //Dispacher time
-        //Solo una carta seleccionada
-        //Bloquer la pantalla
-        //Un booleano para esp
-        //El tiempo no como string poner de formato de en el date solo segundos y min
+        #region propiedades privadas
         private ObservableCollection<clsCarta> _tablero;
-        private DispatcherTimer _tiempo;
+        private DispatcherTimer _cronometro;
         private int _minutos;
         private int _segundos;
+        private bool _tableroHabilitado;
         private string _nombreJugador;
-        private string _resultado;
+        private string _tiempo;
         private clsCarta _cartaSeleccionada;
         private clsCarta _carta1;
         private clsCarta _carta2;
-        private int _numeroParejas = 0;
+        private int _numeroParejas;
+        #endregion
 
+        #region constructor
         public clsJuegoVM()
         {
             clsTablero tablero = new clsTablero();
             _tablero = new ObservableCollection<clsCarta>(tablero.getTablero());
-            _tiempo = new DispatcherTimer();
-            _tiempo.Interval = new TimeSpan(0,0,1);
-            _tiempo.Tick += dispatcherTimer_Tick;
-            _tiempo.Start();
+            _cronometro = new DispatcherTimer();
+            _cronometro.Interval = new TimeSpan(0,0,1);
+            _cronometro.Tick += dispatcherTimer_Tick;
+            _cronometro.Start();
             _minutos = 0;
             _segundos = 0;
+            _tableroHabilitado = true;
+            _numeroParejas = 0;
+            _nombreJugador = "Anonimo";
         }
+        #endregion
 
-        private void dispatcherTimer_Tick(object sender, object e)
-        {
-            _segundos++;
-            if(_segundos == 59)
-            {
-                _minutos++;
-                _segundos = 0;
-            }
-            _resultado = $"{_minutos}:{_segundos}";
-            NotifyPropertyChanged("Cronometro");
-        }
-
-        //Cosas del NotifyPropertyChanged
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void NotifyPropertyChanged(String propertyName = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
+        #region Propiedades publicas
         public ObservableCollection<clsCarta> Tablero
         {
             get
@@ -96,7 +82,7 @@ namespace ParejasCartas_UI.ViewModels
             {
                 _cartaSeleccionada = value;
                 NotifyPropertyChanged("CartaSeleccionada");
-                if (_cartaSeleccionada.Volteada)
+                if (_cartaSeleccionada.Volteada || !_tableroHabilitado)
                 {
                     _cartaSeleccionada = null;
                 }
@@ -108,50 +94,46 @@ namespace ParejasCartas_UI.ViewModels
             }
         }
 
-        public string Cronometro
+        public string Tiempo
         {
             get
             {
-                return _resultado;
+                return _tiempo;
             }
         }
 
-        //public int NumeroParejas
-        //{
-        //    get
-        //    {
-        //        return _numeroParejas;
-        //    }
-        //    set
-        //    {
-        //        _numeroParejas = value;
-                
-        //}
+        public bool TableroHabilitado
+        {
+            get
+            {
+                return _tableroHabilitado;
+            }
+        }
+        #endregion
 
-        //Metodos
+        #region Metodos
         /// <summary>
-        /// Este metodo comprueba que la pareja es correcta en el caso de que no lo es le da la vuelta a las cartas
+        /// Este metodo comprueba si la carta es la primera y si lo es no hace nada.Comprueba si es la segunda y si lo es
+        /// comprueba que la pareja es correcta en el caso de que no lo es le da la vuelta a las cartas
         /// Y en el caso de que si sea correcta le suma uno al numero de parejas
         /// </summary>
         public async void comprobarJugada()
         {
 
             //Aqui comprobamos que carta es a la que le vamos a dar el valor
-
+            _cartaSeleccionada.Volteada = true;
             if (_carta1 == null)
             {
                 _carta1 = _cartaSeleccionada;
-                _carta1.Volteada = true;
+                
             }
-            else if (_carta2 == null)
+            else 
             {
                 _carta2 = _cartaSeleccionada;
-                _carta2.Volteada = true;
-            }
-            //Aqui hago la comprobacion de las parejas
-            if (_carta2 != null)
-            {
+                
 
+                //Aqui hago la comprobacion de las parejas
+                _tableroHabilitado = false;
                 if (_carta1.ID == _carta2.ID)
                 {
                     _numeroParejas++;
@@ -161,44 +143,31 @@ namespace ParejasCartas_UI.ViewModels
                 }
                 else
                 {
-
-                    //ContentDialog mensaje = new ContentDialog();
-                    //Frame frame = Window.Current.Content as Frame;
-
-                    //mensaje.Title = "Incorrecto";
-                    //mensaje.Content = "Has fallado";
-                    //mensaje.PrimaryButtonText = "Vale?";
                     Task task = Task.Delay(350);
                     await task.AsAsyncAction();
                     _carta1.Volteada = false;
                     _carta2.Volteada = false;
                     _carta2 = null;
                     _carta1 = null;
-                    //mensaje.Hide();
-                    ////ContentDialogResult finale = await mensaje.ShowAsync();
-                    
 
                 }
-
+                _tableroHabilitado = true;
+                if (_numeroParejas == 6)
+                {
+                    this.mostrarMensajeGanador();
+                    this.guardarResultado();
+                }
             }
 
-            if (_numeroParejas == 6)
-            {
-                this.mostrarMensajeGanador();
-            }
-    }
+            
+        }
 
-        public async Task<string> mostrarMensajeGanador()
+        /// <summary>
+        /// Este evento se activa cuando se ha terminado la partida y muestra un mensaje para que introduzca el nombre del jugador
+        /// </summary>
+        /// <returns>Devuelve el nick del usuario</returns>
+        public async void mostrarMensajeGanador()
         {
-            //    ContentDialog mensaje = new ContentDialog();
-            //    Frame frame = Window.Current.Content as Frame;
-
-            //    mensaje.Title = "Termina";
-            //    mensaje.Content = "Has Terminado";
-            //    mensaje.PrimaryButtonText = "Por fin";
-
-            //    ContentDialogResult finale = await mensaje.ShowAsync();
-
             string resultado;
             TextBox inputTextBox = new TextBox();
             inputTextBox.AcceptsReturn = false;
@@ -206,7 +175,7 @@ namespace ParejasCartas_UI.ViewModels
             ContentDialog dialog = new ContentDialog();
             dialog.Content = inputTextBox;
             dialog.Title = "Has terminado\n" +
-                "Introduce el nombre";
+                "Introduce tu nick";
             dialog.IsSecondaryButtonEnabled = true;
             dialog.PrimaryButtonText = "Ok";
             dialog.SecondaryButtonText = "Cancel";
@@ -215,9 +184,74 @@ namespace ParejasCartas_UI.ViewModels
             else
                 resultado = "";
 
-            return resultado;
+            _nombreJugador = resultado;
 
         }
+
+        /// <summary>
+        /// Este evento se activara cuando el usuario quiera salir de la pantalla de juego
+        /// </summary>
+        /// <returns></returns>
+        public async Task<bool> mostarMensajeSalida()
+        {
+            bool result = false;
+            ContentDialog mensaje = new ContentDialog();
+            Frame frame = Window.Current.Content as Frame;
+
+            mensaje.Title = "Alerta";
+            mensaje.Content = "Quieres salir?";
+            mensaje.PrimaryButtonText = "Ok perfecto";
+            mensaje.SecondaryButtonText = "Mejor no me voy";
+
+            ContentDialogResult finale = await mensaje.ShowAsync();
+
+            if(finale == ContentDialogResult.Primary)
+            {
+                result = true;
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Este procedimiento se encargara de llamar al metodo de la BL para guardar el resultado de la partida en la base de datos
+        /// </summary>
+        public void guardarResultado()
+        {
+            clsScore score = new clsScore(_tiempo,_nombreJugador);
+            clsManejadoraScoresBL scoresBL = new clsManejadoraScoresBL();
+            scoresBL.insertarPuntuacionBL(score);
+        }
+
+        /// <summary>
+        /// Este procedimiento se ejecuta cada vez que pasa un segundo
+        /// </summary>
+        /// <param name="sender">No es nada</param>
+        /// <param name="e">No es nada</param>
+        private void dispatcherTimer_Tick(object sender, object e)
+        {
+            if (_tableroHabilitado)
+            {
+                _segundos++;
+                if (_segundos == 59)
+                {
+                    _minutos++;
+                    _segundos = 0;
+                }
+                _tiempo = $"{_minutos}:{_segundos}";
+                NotifyPropertyChanged("Tiempo");
+            }
+
+        }
+
+        //Cosas del NotifyPropertyChanged
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged(String propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        #endregion
 
     }
 }
