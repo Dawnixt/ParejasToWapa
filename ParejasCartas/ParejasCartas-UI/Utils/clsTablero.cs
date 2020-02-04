@@ -51,7 +51,7 @@ namespace ParejasCartas_UI.Utils
                     case 2:
                         if (numero2 < 2)
                         {
-                            cartas.Add(new clsCarta(2, "ms-appx:///Assets/DeathHalloween.jpg"));
+                            cartas.Add(new clsCarta(2, "ms-appx:///Assets/SakuWitch.png"));
                             numero2++;
                         }
                         else
@@ -73,7 +73,7 @@ namespace ParejasCartas_UI.Utils
                     case 4:
                         if (numero4 < 2)
                         {
-                            cartas.Add(new clsCarta(4, "ms-appx:///Assets/meme.jpg"));
+                            cartas.Add(new clsCarta(4, "ms-appx:///Assets/Mercy.jpg"));
                             numero4++;
                         }
                         else
@@ -84,7 +84,7 @@ namespace ParejasCartas_UI.Utils
                     case 5:
                         if (numero5 < 2)
                         {
-                            cartas.Add(new clsCarta(5, "ms-appx:///Assets/Emos.jpg"));
+                            cartas.Add(new clsCarta(5, "ms-appx:///Assets/SOXVA.jpg"));
                             numero5++;
                         }
                         else

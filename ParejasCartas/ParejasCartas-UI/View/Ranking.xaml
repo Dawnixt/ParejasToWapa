@@ -39,7 +39,7 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="{Binding Path=Nombre}" Grid.Column="0" TextAlignment="Right" ></TextBlock>
+                        <TextBlock Text="{Binding Path=Nombre}" Grid.Column="0" Margin="0,0,6,0" TextAlignment="Right" ></TextBlock>
                         <TextBlock Text="{Binding Path=Tiempo}" Grid.Column="1" TextAlignment="Right" ></TextBlock>
                     </Grid>
                 </DataTemplate>

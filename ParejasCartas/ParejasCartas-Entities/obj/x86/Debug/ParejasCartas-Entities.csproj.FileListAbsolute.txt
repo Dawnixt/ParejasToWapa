@@ -26,7 +26,6 @@ D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-En
 D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\bin\x86\Debug\ParejasCartas-Entities.pdb
 D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\bin\x86\Debug\ParejasCartas-Entities.pri
 D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
-D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\ParejasCartas-Entities.csprojAssemblyReference.cache
 D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\ParejasCartas-Entities.csproj.CopyComplete
 D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\ParejasCartas-Entities.dll
 D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\ParejasCartas-Entities.pdb

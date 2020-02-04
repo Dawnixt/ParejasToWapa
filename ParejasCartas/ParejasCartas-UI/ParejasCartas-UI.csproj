@@ -143,11 +143,15 @@
   <ItemGroup>
     <Content Include="Assets\66628110-juego-texto-goma-sello-sello-marca-de-agua-título-dentro-de-banner-rectangular-con-diseño-grunge-y-textur.jpg" />
     <Content Include="Assets\Adorable.jpg" />
+    <Content Include="Assets\cartas %281%29.jpg" />
     <Content Include="Assets\ChaldeaPark.jpg" />
     <Content Include="Assets\DeathHalloween.jpg" />
     <Content Include="Assets\Emos.jpg" />
     <Content Include="Assets\KaminaJimaru.jpg" />
     <Content Include="Assets\meme.jpg" />
+    <Content Include="Assets\Mercy.jpg" />
+    <Content Include="Assets\SakuWitch.png" />
+    <Content Include="Assets\SOXVA.jpg" />
     <Content Include="Assets\yu-gi-oh-standard-card-back-sleeves.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

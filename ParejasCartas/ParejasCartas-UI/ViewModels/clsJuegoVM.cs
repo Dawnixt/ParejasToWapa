@@ -154,7 +154,7 @@ namespace ParejasCartas_UI.ViewModels
                 _tableroHabilitado = true;
                 if (_numeroParejas == 6)
                 {
-                    this.mostrarMensajeGanador();
+                    _nombreJugador = await this.mostrarMensajeGanador();
                     this.guardarResultado();
                 }
             }
@@ -166,7 +166,7 @@ namespace ParejasCartas_UI.ViewModels
         /// Este evento se activa cuando se ha terminado la partida y muestra un mensaje para que introduzca el nombre del jugador
         /// </summary>
         /// <returns>Devuelve el nick del usuario</returns>
-        public async void mostrarMensajeGanador()
+        public async Task<string> mostrarMensajeGanador()
         {
             string resultado;
             TextBox inputTextBox = new TextBox();
@@ -184,7 +184,7 @@ namespace ParejasCartas_UI.ViewModels
             else
                 resultado = "";
 
-            _nombreJugador = resultado;
+            return resultado;
 
         }
 

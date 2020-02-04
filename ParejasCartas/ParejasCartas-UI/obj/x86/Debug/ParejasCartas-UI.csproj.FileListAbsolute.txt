@@ -128,5 +128,4 @@ D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\obj\x86\Debug\
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\obj\x86\Debug\ProjectArchitectures.txt
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758516200000000.json
-D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-UI\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885274160000000.json
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885274160000000.json
