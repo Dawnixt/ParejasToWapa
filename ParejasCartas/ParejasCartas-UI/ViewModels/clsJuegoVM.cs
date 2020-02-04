@@ -151,12 +151,13 @@ namespace ParejasCartas_UI.ViewModels
                     _carta1 = null;
 
                 }
-                _tableroHabilitado = true;
+                
                 if (_numeroParejas == 6)
                 {
                     _nombreJugador = await this.mostrarMensajeGanador();
                     this.guardarResultado();
                 }
+                _tableroHabilitado = true;
             }
 
             

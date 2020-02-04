@@ -10,9 +10,9 @@
 
     <RelativePanel>
         <Image x:ConnectionId='2' x:Name="Imagen" Source="ms-appx:///Assets/cartas (1).jpg" MaxHeight="300" RelativePanel.AlignHorizontalCenterWithPanel="True"></Image>
-        <TextBlock Text="Encuentra la Pareja" FontSize="60" RelativePanel.Below="Imagen" ></TextBlock>
-        <Button x:ConnectionId='3' Name="btnJugar" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Width="100" Height="60" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Bottom"                       >Jugar</Button>
-        <Button x:ConnectionId='4' Name="btnRanking" RelativePanel.Below="btnJugar" Margin="0,90,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True"  Width="100" Height="60"                         >Ranking</Button>
+        <TextBlock x:ConnectionId='3' Name="titulo" Text="Encuentra la Pareja" FontSize="60" RelativePanel.Below="Imagen" RelativePanel.AlignHorizontalCenterWithPanel="True"></TextBlock>
+        <Button x:ConnectionId='4' RelativePanel.Below="titulo" Name="btnJugar" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Width="100" Height="60" HorizontalAlignment="Center" Margin="0,12,0,0" VerticalAlignment="Bottom"                       >Jugar</Button>
+        <Button x:ConnectionId='5' Name="btnRanking" RelativePanel.Below="btnJugar" Margin="0,90,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True"  Width="100" Height="60"                         >Ranking</Button>
     </RelativePanel>
 </Page>
 
