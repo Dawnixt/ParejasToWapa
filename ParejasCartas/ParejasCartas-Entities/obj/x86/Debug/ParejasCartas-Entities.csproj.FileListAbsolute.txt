@@ -68,3 +68,4 @@ D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\qualifiers.txt
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Escritorio\Githabu\ParejasToWapa\ParejasToWapa\ParejasCartas\ParejasCartas-Entities\obj\x86\Debug\ParejasCartas-Entities.csprojAssemblyReference.cache

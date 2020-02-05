@@ -19,8 +19,6 @@ namespace ParejasCartas_UI.ViewModels
         #region propiedades privadas
         private ObservableCollection<clsCarta> _tablero;
         private DispatcherTimer _cronometro;
-        private int _minutos;
-        private int _segundos;
         private bool _tableroHabilitado;
         private string _nombreJugador;
         private string _tiempo;
@@ -28,6 +26,7 @@ namespace ParejasCartas_UI.ViewModels
         private clsCarta _carta1;
         private clsCarta _carta2;
         private int _numeroParejas;
+        private DateTime _fecha;
         #endregion
 
         #region constructor
@@ -39,11 +38,10 @@ namespace ParejasCartas_UI.ViewModels
             _cronometro.Interval = new TimeSpan(0,0,1);
             _cronometro.Tick += dispatcherTimer_Tick;
             _cronometro.Start();
-            _minutos = 0;
-            _segundos = 0;
             _tableroHabilitado = true;
             _numeroParejas = 0;
             _nombreJugador = "Anonimo";
+            _fecha = new DateTime(1, 1, 1, 0, 0, 0);
         }
         #endregion
 
@@ -134,6 +132,7 @@ namespace ParejasCartas_UI.ViewModels
 
                 //Aqui hago la comprobacion de las parejas
                 _tableroHabilitado = false;
+                NotifyPropertyChanged("TableroHabilitado");
                 if (_carta1.ID == _carta2.ID)
                 {
                     _numeroParejas++;
@@ -154,10 +153,12 @@ namespace ParejasCartas_UI.ViewModels
                 
                 if (_numeroParejas == 6)
                 {
+                    _cronometro.Stop();
                     _nombreJugador = await this.mostrarMensajeGanador();
                     this.guardarResultado();
                 }
                 _tableroHabilitado = true;
+                NotifyPropertyChanged("TableroHabilitado");
             }
 
             
@@ -231,18 +232,16 @@ namespace ParejasCartas_UI.ViewModels
         /// <param name="e">No es nada</param>
         private void dispatcherTimer_Tick(object sender, object e)
         {
-            if (_tableroHabilitado)
-            {
-                _segundos++;
-                if (_segundos == 59)
-                {
-                    _minutos++;
-                    _segundos = 0;
-                }
-                _tiempo = $"{_minutos}:{_segundos}";
-                NotifyPropertyChanged("Tiempo");
-            }
-
+            //_segundos++;
+            //if (_segundos == 59)
+            //{
+            //    _minutos++;
+            //    _segundos = 0;
+            //}
+            //_tiempo = $"{_minutos}:{_segundos}";
+            _fecha = _fecha.AddSeconds(1);
+            _tiempo = _fecha.ToString("mm:ss");
+            NotifyPropertyChanged("Tiempo");
         }
 
         //Cosas del NotifyPropertyChanged

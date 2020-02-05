@@ -41,7 +41,7 @@ namespace ParejasCartas_Entities
             }
         }
 
-        public String Tiempo
+        public string Tiempo
         {
             get
             {

@@ -54,7 +54,7 @@ namespace ParejasCartas_DAL.Lists
 
                         if (!String.IsNullOrEmpty(reader["tiempo"].ToString()))
                         {
-                            puntuacion.Tiempo = (String)reader["tiempo"];
+                            puntuacion.Tiempo = (string)reader["tiempo"];
                         }
 
                         scores.Add(puntuacion);
