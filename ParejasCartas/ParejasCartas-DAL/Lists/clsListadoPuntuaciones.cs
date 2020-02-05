@@ -35,7 +35,7 @@ namespace ParejasCartas_DAL.Lists
                 clsScore puntuacion;
 
                 connection = myConnection.getConnection();
-                command.CommandText = "Select * from dbo.Scores Order by tiempo";
+                command.CommandText = "SELECT top 10 * FROM Scores order by tiempo ";
                 command.Connection = connection;
                 reader = command.ExecuteReader();
 

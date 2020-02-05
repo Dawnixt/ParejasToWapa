@@ -6,12 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="LightGreen">
 
     <RelativePanel>
         <Image x:Name="Imagen" Source="ms-appx:///Assets/cartas (1).jpg" MaxHeight="300" RelativePanel.AlignHorizontalCenterWithPanel="True"></Image>
         <TextBlock Name="titulo" Text="Encuentra la Pareja" FontSize="60" RelativePanel.Below="Imagen" RelativePanel.AlignHorizontalCenterWithPanel="True"></TextBlock>
-        <Button RelativePanel.Below="titulo" Name="btnJugar" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Width="100" Height="60" HorizontalAlignment="Center" Margin="0,12,0,0" VerticalAlignment="Bottom" Click="BtnJugar_Click">Jugar</Button>
-        <Button Name="btnRanking" RelativePanel.Below="btnJugar" Margin="0,90,0,0" RelativePanel.AlignHorizontalCenterWithPanel="True"  Width="100" Height="60" Click="BtnRanking_Click">Ranking</Button>
+        <TextBlock Name="jugar" FontSize="50" RelativePanel.Below="titulo" Margin="20"  Tapped="BtnJugar_Click">Jugar</TextBlock>
+        <TextBlock Name="Ranking" FontSize="50" RelativePanel.AlignLeftWithPanel="True" RelativePanel.Below="jugar" Margin="12" RelativePanel.AlignHorizontalCenterWithPanel="True" Tapped="BtnRanking_Click">Ranking</TextBlock>
+        <TextBlock FontSize="50" RelativePanel.AlignLeftWithPanel="True" RelativePanel.Below="Ranking" Margin="12" RelativePanel.AlignHorizontalCenterWithPanel="True" Tapped="BtnRanking_Click">Salir</TextBlock>
     </RelativePanel>
 </Page>

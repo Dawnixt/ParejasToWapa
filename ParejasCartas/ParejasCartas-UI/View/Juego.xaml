@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm ="using:ParejasCartas_UI.ViewModels"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="CornflowerBlue">
 
     <Page.DataContext>
         <vm:clsJuegoVM></vm:clsJuegoVM>
@@ -16,12 +16,13 @@
     <RelativePanel>
         <AppBarButton Name="Volver" Icon="Back" Tapped="AppBarButton_Tapped"></AppBarButton>
         <StackPanel RelativePanel.Below="Volver" Name="Cronometro"  Margin="150,50,0,0" BorderBrush="LightGray">
-            <TextBlock FontSize="50" Text="{Binding Path=Tiempo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+            <TextBlock FontSize="50">Tiempo:</TextBlock>
+            <TextBlock FontSize="50" TextAlignment="Right" Text="{Binding Path=Tiempo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
         </StackPanel>
-        <GridView  RelativePanel.AlignVerticalCenterWithPanel="True" IsEnabled="{Binding Path=TableroHabilitado, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="12" HorizontalAlignment="Center" VerticalAlignment="Center" SelectedItem="{Binding Path=CartaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Path=Tablero}">
+        <GridView Width="630" RelativePanel.AlignVerticalCenterWithPanel="True" IsEnabled="{Binding Path=TableroHabilitado, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="12" HorizontalAlignment="Center" VerticalAlignment="Center" SelectedItem="{Binding Path=CartaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Path=Tablero}">
             <GridView.ItemTemplate>
                 <DataTemplate>
-                    <Image Width="180" Margin="6" Source="{Binding Path=ImagenAMostrar, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Image>
+                    <Image Width="140" Margin="6" Source="{Binding Path=ImagenAMostrar, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Image>
                 </DataTemplate>
             </GridView.ItemTemplate>
             <GridView.ItemsPanel>

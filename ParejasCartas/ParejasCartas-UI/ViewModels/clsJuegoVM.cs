@@ -16,6 +16,7 @@ namespace ParejasCartas_UI.ViewModels
 {
     public class clsJuegoVM : INotifyPropertyChanged
     {
+        //TODO CONEXION FALLIDA
         #region propiedades privadas
         private ObservableCollection<clsCarta> _tablero;
         private DispatcherTimer _cronometro;
@@ -148,9 +149,14 @@ namespace ParejasCartas_UI.ViewModels
                     _carta2.Volteada = false;
                     _carta2 = null;
                     _carta1 = null;
+                    //Aqui intentamos que se deseleccione la carta para poder darle la vuelta  
+                    _cartaSeleccionada = null;
+                    NotifyPropertyChanged("CartaSeleccionada");
+
 
                 }
                 
+                //Aqui compruebo si ya ha encontrado todas las parejas
                 if (_numeroParejas == 6)
                 {
                     _cronometro.Stop();
@@ -193,7 +199,7 @@ namespace ParejasCartas_UI.ViewModels
         /// <summary>
         /// Este evento se activara cuando el usuario quiera salir de la pantalla de juego
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Devuelve un boolean si este es igual a true significa que el usuario quiere salir y si es false que no</returns>
         public async Task<bool> mostarMensajeSalida()
         {
             bool result = false;
