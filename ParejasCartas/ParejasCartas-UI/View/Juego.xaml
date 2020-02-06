@@ -14,10 +14,11 @@
     </Page.DataContext>
     
     <RelativePanel>
+        <Rectangle RelativePanel.AlignRightWithPanel="True" Height="100" Fill="IndianRed" RelativePanel.AlignLeftWithPanel="True"></Rectangle>
         <AppBarButton Name="Volver" Icon="Back" Tapped="AppBarButton_Tapped"></AppBarButton>
-        <StackPanel RelativePanel.Below="Volver" Name="Cronometro"  Margin="150,50,0,0" BorderBrush="LightGray">
-            <TextBlock FontSize="50">Tiempo:</TextBlock>
-            <TextBlock FontSize="50" TextAlignment="Right" Text="{Binding Path=Tiempo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+        <StackPanel  Name="Cronometro"  Margin="150,0,0,0" BorderBrush="LightGray" Orientation="Horizontal" RelativePanel.AlignRightWithPanel="True">
+            <TextBlock FontSize="50" Margin="6">Tiempo:</TextBlock>
+            <TextBlock FontSize="50" Margin="6" TextAlignment="Right" Text="{Binding Path=Tiempo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
         </StackPanel>
         <GridView Width="630" RelativePanel.AlignVerticalCenterWithPanel="True" IsEnabled="{Binding Path=TableroHabilitado, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="12" HorizontalAlignment="Center" VerticalAlignment="Center" SelectedItem="{Binding Path=CartaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Path=Tablero}">
             <GridView.ItemTemplate>
