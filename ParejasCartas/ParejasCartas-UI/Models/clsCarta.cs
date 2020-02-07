@@ -9,12 +9,15 @@ namespace ParejasCartas_UI.Models
 {
     public class clsCarta : INotifyPropertyChanged
     {
+        #region Propiedades privadas
         private int _id;
         private string _imagenReverso;
         private string _imagenAnverso;
         private string _imagenAMostrar;
         private bool _volteada;
+        #endregion
 
+        #region Constructores
         public clsCarta()
         {
             _imagenAnverso = "ms-appx:///Assets/yu-gi-oh-standard-card-back-sleeves.jpg";
@@ -29,7 +32,9 @@ namespace ParejasCartas_UI.Models
             _volteada = false;
             _imagenAMostrar = _imagenAnverso;
         }
+        #endregion
 
+        #region Propiedades publicas
         public string ImagenAMostrar
         {
             get
@@ -96,7 +101,9 @@ namespace ParejasCartas_UI.Models
                 _id = value;
             }
         }
+        #endregion
 
+        #region NotifyPropertyChanged
         //Cosas del NotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -104,5 +111,6 @@ namespace ParejasCartas_UI.Models
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        #endregion
     }
 }

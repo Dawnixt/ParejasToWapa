@@ -17,16 +17,15 @@ namespace ParejasCartas_UI.Utils
 
         }
 
+        /// <summary>
+        /// Este metodo genera un tablero aleatorio de cartas
+        /// </summary>
+        /// <returns>Un listado de cartas aleatorias</returns>
         public List<clsCarta> getTablero()
         {
             List<clsCarta> cartas = new List<clsCarta>();
 
-            int numero1 = 0;
-            int numero2 = 0;
-            int numero3 = 0;
-            int numero4 = 0;
-            int numero5 = 0;
-            int numero6 = 0;
+            int numero1 = 0, numero2 = 0, numero3 = 0, numero4 = 0, numero5 = 0, numero6 = 0;
             int idCarta = 0;
             Random cartaSiguiente = new Random();
 

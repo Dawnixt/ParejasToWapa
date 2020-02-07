@@ -17,7 +17,6 @@ namespace ParejasCartas_UI.ViewModels
 {
     public class clsJuegoVM : INotifyPropertyChanged
     {
-        //TODO CONEXION FALLIDA
         #region propiedades privadas
         private ObservableCollection<clsCarta> _tablero;
         private DispatcherTimer _cronometro;
@@ -42,7 +41,6 @@ namespace ParejasCartas_UI.ViewModels
             _cronometro.Start();
             _tableroHabilitado = true;
             _numeroParejas = 0;
-            _nombreJugador = "Anonimo";
             _fecha = new DateTime(1, 1, 1, 0, 0, 0);
         }
         #endregion
@@ -82,15 +80,8 @@ namespace ParejasCartas_UI.ViewModels
             {
                 _cartaSeleccionada = value;
                 NotifyPropertyChanged("CartaSeleccionada");
-                if (_cartaSeleccionada.Volteada || !_tableroHabilitado)
-                {
-                    _cartaSeleccionada = null;
-                }
-                else
-                {
-                    this.comprobarJugada();
-                }
-                
+                this.comprobarJugada();
+
             }
         }
 
@@ -113,59 +104,67 @@ namespace ParejasCartas_UI.ViewModels
 
         #region Metodos
         /// <summary>
-        /// Este metodo comprueba si la carta es la primera y si lo es no hace nada.Comprueba si es la segunda y si lo es
+        /// Este metodo comprueba si la carta ya ha sido seleccionada y si no lo es comprueba si es la primera 
+        /// y si lo es no hace nada.Comprueba si es la segunda y si lo es
         /// comprueba que la pareja es correcta en el caso de que no lo es le da la vuelta a las cartas
         /// Y en el caso de que si sea correcta le suma uno al numero de parejas
         /// </summary>
         public async void comprobarJugada()
         {
-
-            //Aqui comprobamos que carta es a la que le vamos a dar el valor
-            _cartaSeleccionada.Volteada = true;
-            if (_carta1 == null)
+            //Aqui comprueba que la carta que ha seleccionado no es una que ya este volteada
+            if (_cartaSeleccionada.Volteada)
             {
-                _carta1 = _cartaSeleccionada;
-                
+                _cartaSeleccionada = null;
             }
-            else 
+            else
             {
-                _carta2 = _cartaSeleccionada;
-                
-
-                //Aqui hago la comprobacion de las parejas
-                _tableroHabilitado = false;
-                NotifyPropertyChanged("TableroHabilitado");
-                if (_carta1.ID == _carta2.ID)
+                //Aqui comprobamos que carta es a la que le vamos a dar el valor
+                _cartaSeleccionada.Volteada = true;
+                if (_carta1 == null)
                 {
-                    _numeroParejas++;
-                    _carta2 = null;
-                    _carta1 = null;
+                    _carta1 = _cartaSeleccionada;
 
                 }
                 else
                 {
-                    Task task = Task.Delay(350);
-                    await task.AsAsyncAction();
-                    _carta1.Volteada = false;
-                    _carta2.Volteada = false;
-                    _carta2 = null;
-                    _carta1 = null;
-                    //Aqui intentamos que se deseleccione la carta para poder darle la vuelta  
-                    _cartaSeleccionada = null;
-                    NotifyPropertyChanged("CartaSeleccionada");
+                    _carta2 = _cartaSeleccionada;
 
 
+                    //Aqui hago la comprobacion de las parejas
+                    _tableroHabilitado = false;
+                    NotifyPropertyChanged("TableroHabilitado");
+                    if (_carta1.ID == _carta2.ID)
+                    {
+                        _numeroParejas++;
+                        _carta2 = null;
+                        _carta1 = null;
+
+                    }
+                    else
+                    {
+                        Task task = Task.Delay(350);
+                        await task.AsAsyncAction();
+                        _carta1.Volteada = false;
+                        _carta2.Volteada = false;
+                        _carta2 = null;
+                        _carta1 = null;
+                        //Aqui intentamos que se deseleccione la carta para poder darle la vuelta  
+                        _cartaSeleccionada = null;
+                        NotifyPropertyChanged("CartaSeleccionada");
+
+
+                    }
+
+                    //Aqui compruebo si ya ha encontrado todas las parejas
+                    if (_numeroParejas == 6)
+                    {
+                        _cronometro.Stop();
+                        _nombreJugador = await this.mostrarMensajeGanador();
+                        this.guardarResultado();
+                    }
+                    _tableroHabilitado = true;
+                    NotifyPropertyChanged("TableroHabilitado");
                 }
-                
-                //Aqui compruebo si ya ha encontrado todas las parejas
-                if (_numeroParejas == 6)
-                {
-                    _cronometro.Stop();
-                    _nombreJugador = await this.mostrarMensajeGanador();
-                    this.guardarResultado();
-                }
-                _tableroHabilitado = true;
-                NotifyPropertyChanged("TableroHabilitado");
             }
 
             
@@ -223,10 +222,15 @@ namespace ParejasCartas_UI.ViewModels
         }
 
         /// <summary>
-        /// Este procedimiento se encargara de llamar al metodo de la BL para guardar el resultado de la partida en la base de datos
+        /// Este procedimiento se encargara de llamar al metodo de la BL para guardar 
+        /// el resultado de la partida en la base de datos
         /// </summary>
         public void guardarResultado()
         {
+            if(_nombreJugador == "")
+            {
+                _nombreJugador = "Anonimo";
+            }
             clsScore score = new clsScore(_tiempo,_nombreJugador);
             clsManejadoraScoresBL scoresBL = new clsManejadoraScoresBL();
             try
@@ -247,18 +251,11 @@ namespace ParejasCartas_UI.ViewModels
         /// <param name="e">No es nada</param>
         private void dispatcherTimer_Tick(object sender, object e)
         {
-            //_segundos++;
-            //if (_segundos == 59)
-            //{
-            //    _minutos++;
-            //    _segundos = 0;
-            //}
-            //_tiempo = $"{_minutos}:{_segundos}";
             _fecha = _fecha.AddSeconds(1);
             _tiempo = _fecha.ToString("mm:ss");
             NotifyPropertyChanged("Tiempo");
         }
-
+        #region NotifyPropertyChanged
         //Cosas del NotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -266,7 +263,7 @@ namespace ParejasCartas_UI.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
+        #endregion
         /// <summary>
         /// Este metodo nos mostrara un mensaje de error 
         /// </summary>

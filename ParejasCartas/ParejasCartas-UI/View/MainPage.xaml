@@ -11,7 +11,7 @@
     <RelativePanel>
         <Image x:Name="Imagen" Source="ms-appx:///Assets/cartas (1).jpg" MaxHeight="300" RelativePanel.AlignHorizontalCenterWithPanel="True"></Image>
         <TextBlock Name="titulo" Text="Encuentra la Pareja" FontSize="60" RelativePanel.Below="Imagen" RelativePanel.AlignHorizontalCenterWithPanel="True"></TextBlock>
-        <Button RelativePanel.AlignHorizontalCenterWithPanel="True" Name="jugar" FontSize="50" RelativePanel.Below="titulo" Margin="50"  Tapped="BtnJugar_Click" RelativePanel.AlignVerticalCenterWithPanel="True" >Jugar</Button>
-        <Button RelativePanel.AlignHorizontalCenterWithPanel="True" Name="Ranking" FontSize="50"  RelativePanel.Below="jugar" Margin="50" Tapped="BtnRanking_Click">Ranking</Button>
+        <Button RelativePanel.AlignHorizontalCenterWithPanel="True" Name="jugar" FontSize="50" RelativePanel.Below="titulo" Margin="25"  Tapped="BtnJugar_Click" RelativePanel.AlignVerticalCenterWithPanel="True" >Jugar</Button>
+        <Button RelativePanel.AlignHorizontalCenterWithPanel="True" Name="Ranking" FontSize="50"  RelativePanel.Below="jugar" Margin="25" Tapped="BtnRanking_Click">Ranking</Button>
     </RelativePanel>
 </Page>

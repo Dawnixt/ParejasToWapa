@@ -14,6 +14,7 @@ namespace ParejasCartas_Entities
         private int _id;
         #endregion
 
+        #region constructores
         public clsScore()
         {
             _id = 0;
@@ -26,6 +27,7 @@ namespace ParejasCartas_Entities
             _tiempo = tiempo;
             _nombre = nombre;
         }
+        #endregion
 
         #region Propiedades publicas
 
