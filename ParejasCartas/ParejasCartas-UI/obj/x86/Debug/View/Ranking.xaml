@@ -41,7 +41,6 @@
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-                <!--TODO Una zona para poner tu puntuacion-->
             </ListView>
             <ListView x:ConnectionId='8' Grid.Row="1" Grid.Column="1" RelativePanel.Below="Info" Margin="12" Name="ListaPuntuaciones" ItemsSource="{Binding Path=ListadoPuntuaciones , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                 <ListView.ItemTemplate>

@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-07T08:02:02.074</Modified>
+      <Modified>2020-02-07T13:27:31.626</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\ParejasCartas-UI.exe">
       <PackagePath>entrypoint\ParejasCartas-UI.exe</PackagePath>
-      <Modified>2020-02-07T08:02:01.401</Modified>
+      <Modified>2020-02-07T13:27:29.530</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dgordillo\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -150,23 +150,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\ParejasCartas-UI.xr.xml">
       <PackagePath>ParejasCartas-UI.xr.xml</PackagePath>
-      <Modified>2020-02-07T07:54:15.901</Modified>
+      <Modified>2020-02-07T12:22:51.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-02-07T08:02:01.200</Modified>
+      <Modified>2020-02-07T13:27:29.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\View\Juego.xbf">
       <PackagePath>View\Juego.xbf</PackagePath>
-      <Modified>2020-02-07T08:02:01.200</Modified>
+      <Modified>2020-02-07T13:27:29.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
-      <Modified>2020-02-07T08:02:01.201</Modified>
+      <Modified>2020-02-07T13:27:29.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\View\Ranking.xbf">
       <PackagePath>View\Ranking.xbf</PackagePath>
-      <Modified>2020-02-07T08:02:01.201</Modified>
+      <Modified>2020-02-07T13:27:29.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -174,11 +174,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-02-07T08:02:01.596</Modified>
+      <Modified>2020-02-07T12:22:52.749</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Ejercicios\Github\ParejasToWapa\ParejasCartas\ParejasCartas-UI\bin\x86\Debug\Core\ParejasCartas-UI.exe">
       <PackagePath>ParejasCartas-UI.exe</PackagePath>
-      <Modified>2020-02-07T08:02:02.066</Modified>
+      <Modified>2020-02-07T13:27:31.619</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

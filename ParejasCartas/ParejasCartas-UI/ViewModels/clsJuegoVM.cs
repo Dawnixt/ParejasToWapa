@@ -28,6 +28,7 @@ namespace ParejasCartas_UI.ViewModels
         private clsCarta _carta2;
         private int _numeroParejas;
         private DateTime _fecha;
+        //private DelegateCommand _reiniciar;
         #endregion
 
         #region constructor
@@ -42,10 +43,21 @@ namespace ParejasCartas_UI.ViewModels
             _tableroHabilitado = true;
             _numeroParejas = 0;
             _fecha = new DateTime(1, 1, 1, 0, 0, 0);
+            //_reiniciar = new DelegateCommand(Reiniciar_Executed);
         }
+
         #endregion
 
         #region Propiedades publicas
+
+        //public DelegateCommand Reiniciar
+        //{
+        //    get
+        //    {
+        //        return _reiniciar;
+        //    }
+        //}
+
         public ObservableCollection<clsCarta> Tablero
         {
             get
@@ -103,6 +115,18 @@ namespace ParejasCartas_UI.ViewModels
         #endregion
 
         #region Metodos
+
+        ///// <summary>
+        ///// Esto es un evento que se ejecutara cuando se presione el boton reiniciar y lo que hara sera 
+        ///// crear un nuevo tablero
+        ///// </summary>
+        //private void Reiniciar_Executed()
+        //{
+        //    clsTablero tablero = new clsTablero();
+        //    _tablero = new ObservableCollection<clsCarta>(tablero.getTablero());
+        //    NotifyPropertyChanged("Tablero");
+        //}
+
         /// <summary>
         /// Este metodo comprueba si la carta ya ha sido seleccionada y si no lo es comprueba si es la primera 
         /// y si lo es no hace nada.Comprueba si es la segunda y si lo es
@@ -190,7 +214,7 @@ namespace ParejasCartas_UI.ViewModels
             if (await dialog.ShowAsync() == ContentDialogResult.Primary)
                 resultado = inputTextBox.Text;
             else
-                resultado = "";
+                resultado = "Anonimo";
 
             return resultado;
 
@@ -227,10 +251,6 @@ namespace ParejasCartas_UI.ViewModels
         /// </summary>
         public void guardarResultado()
         {
-            if(_nombreJugador == "")
-            {
-                _nombreJugador = "Anonimo";
-            }
             clsScore score = new clsScore(_tiempo,_nombreJugador);
             clsManejadoraScoresBL scoresBL = new clsManejadoraScoresBL();
             try
@@ -255,6 +275,7 @@ namespace ParejasCartas_UI.ViewModels
             _tiempo = _fecha.ToString("mm:ss");
             NotifyPropertyChanged("Tiempo");
         }
+
         #region NotifyPropertyChanged
         //Cosas del NotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
@@ -264,6 +285,7 @@ namespace ParejasCartas_UI.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
+
         /// <summary>
         /// Este metodo nos mostrara un mensaje de error 
         /// </summary>

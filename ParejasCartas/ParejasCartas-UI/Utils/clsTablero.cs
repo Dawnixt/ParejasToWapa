@@ -23,13 +23,14 @@ namespace ParejasCartas_UI.Utils
         /// <returns>Un listado de cartas aleatorias</returns>
         public List<clsCarta> getTablero()
         {
+            //TODO Cambiar esto
             List<clsCarta> cartas = new List<clsCarta>();
 
             int numero1 = 0, numero2 = 0, numero3 = 0, numero4 = 0, numero5 = 0, numero6 = 0;
             int idCarta = 0;
             Random cartaSiguiente = new Random();
 
-            for (int i = 0; i<12; i++)
+            for (int i = 0; i < 12; i++)
             {
                 
                 idCarta = cartaSiguiente.Next(1, 7);
