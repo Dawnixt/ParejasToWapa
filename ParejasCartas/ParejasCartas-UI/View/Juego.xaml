@@ -12,6 +12,17 @@
     <Page.DataContext>
         <vm:clsJuegoVM></vm:clsJuegoVM>
     </Page.DataContext>
+
+    <!--<Page.Resources>
+        <Storyboard x:Name="AnimacionRotation">
+            <DoubleAnimation Duration="0:0:5"
+                             From="0" To="-180"
+                             Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)"
+                             Storyboard.TargetName="Cartas"
+                             d:IsOptimized="True"/>
+        </Storyboard>
+    https://www.arthurrump.com/2018/07/21/animating-gridviewitems-with-windows-ui-composition-aka-the-visual-layer/
+    </Page.Resources>-->
     
     <RelativePanel>
         <Rectangle Name="Barra" RelativePanel.AlignRightWithPanel="True" Height="100" Fill="IndianRed" RelativePanel.AlignLeftWithPanel="True"></Rectangle>
@@ -20,10 +31,10 @@
             <TextBlock FontSize="50" Margin="6">Tiempo:</TextBlock>
             <TextBlock FontSize="50" Margin="6" TextAlignment="Right" Text="{Binding Path=Tiempo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
         </StackPanel>
-        <GridView RelativePanel.Below="Barra" Margin="12,12,0,0" Width="630" RelativePanel.AlignVerticalCenterWithPanel="True" IsEnabled="{Binding Path=TableroHabilitado, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignHorizontalCenterWithPanel="True" HorizontalAlignment="Center" VerticalAlignment="Center" SelectedItem="{Binding Path=CartaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Path=Tablero}">
+        <GridView x:Name="Cartas" RelativePanel.Below="Barra" Margin="12,12,0,0" Width="630" RelativePanel.AlignVerticalCenterWithPanel="True" IsEnabled="{Binding Path=TableroHabilitado, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignHorizontalCenterWithPanel="True" HorizontalAlignment="Center" VerticalAlignment="Center" SelectedItem="{Binding Path=CartaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Path=Tablero}">
             <GridView.ItemTemplate>
                 <DataTemplate>
-                    <Image Width="120" Margin="6" Source="{Binding Path=ImagenAMostrar, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Image>
+                    <Image x:Name="Carta" Width="120" Margin="6" Source="{Binding Path=ImagenAMostrar, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Tapped="Image_Tapped"></Image>
                 </DataTemplate>
             </GridView.ItemTemplate>
             <GridView.ItemsPanel>

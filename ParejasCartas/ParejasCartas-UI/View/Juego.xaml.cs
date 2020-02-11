@@ -41,5 +41,10 @@ namespace ParejasCartas_UI.View
             }
 
         }
+
+        //private void Image_Tapped(object sender, TappedRoutedEventArgs e)
+        //{
+        //    AnimacionRotation.Begin();
+        //}
     }
 }
