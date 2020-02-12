@@ -166,7 +166,7 @@ namespace ParejasCartas_UI.ViewModels
                     }
                     else
                     {
-                        Task task = Task.Delay(350);
+                        Task task = Task.Delay(500);
                         await task.AsAsyncAction();
                         _carta1.Volteada = false;
                         _carta2.Volteada = false;

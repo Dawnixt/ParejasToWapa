@@ -31,10 +31,21 @@
             <TextBlock FontSize="50" Margin="6">Tiempo:</TextBlock>
             <TextBlock FontSize="50" Margin="6" TextAlignment="Right" Text="{Binding Path=Tiempo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
         </StackPanel>
-        <GridView x:Name="Cartas" RelativePanel.Below="Barra" Margin="12,12,0,0" Width="630" RelativePanel.AlignVerticalCenterWithPanel="True" IsEnabled="{Binding Path=TableroHabilitado, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignHorizontalCenterWithPanel="True" HorizontalAlignment="Center" VerticalAlignment="Center" SelectedItem="{Binding Path=CartaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Path=Tablero}">
+        <GridView Name="Cartas" RelativePanel.Below="Barra" Margin="12,12,0,0" Width="630" RelativePanel.AlignVerticalCenterWithPanel="True" IsEnabled="{Binding Path=TableroHabilitado, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignHorizontalCenterWithPanel="True" HorizontalAlignment="Center" VerticalAlignment="Center" SelectedItem="{Binding Path=CartaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Path=Tablero}">
             <GridView.ItemTemplate>
                 <DataTemplate>
-                    <Image x:Name="Carta" Width="120" Margin="6" Source="{Binding Path=ImagenAMostrar, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Tapped="Image_Tapped"></Image>
+                    <Image Tapped="Carta_Tapped" x:Name="Carta" Width="120" Margin="6" Source="{Binding Path=ImagenAMostrar, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                        <Image.Resources>
+                            <Storyboard x:Name="Rotar">
+                                <DoubleAnimation Duration="0:0:0.5"
+                             AutoReverse="False"
+                             From="180" To="0"
+                             Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)"
+                             Storyboard.TargetName="Carta"
+                             />
+                            </Storyboard>
+                        </Image.Resources>
+                    </Image>
                 </DataTemplate>
             </GridView.ItemTemplate>
             <GridView.ItemsPanel>

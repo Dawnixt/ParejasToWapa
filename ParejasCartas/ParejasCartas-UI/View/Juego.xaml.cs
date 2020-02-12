@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
@@ -40,6 +41,12 @@ namespace ParejasCartas_UI.View
                 this.Frame.Navigate(typeof(MainPage));
             }
 
+        }
+
+        private void Carta_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Storyboard sb = (sender as Image).Resources["Rotar"] as Storyboard;
+            sb.Begin();
         }
 
         //private void Image_Tapped(object sender, TappedRoutedEventArgs e)
