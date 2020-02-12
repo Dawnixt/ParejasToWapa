@@ -13,16 +13,7 @@
         <vm:clsJuegoVM></vm:clsJuegoVM>
     </Page.DataContext>
 
-    <!--<Page.Resources>
-        <Storyboard x:Name="AnimacionRotation">
-            <DoubleAnimation Duration="0:0:5"
-                             From="0" To="-180"
-                             Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)"
-                             Storyboard.TargetName="Cartas"
-                             d:IsOptimized="True"/>
-        </Storyboard>
-    https://www.arthurrump.com/2018/07/21/animating-gridviewitems-with-windows-ui-composition-aka-the-visual-layer/
-    </Page.Resources>-->
+
     
     <RelativePanel>
         <Rectangle Name="Barra" RelativePanel.AlignRightWithPanel="True" Height="100" Fill="IndianRed" RelativePanel.AlignLeftWithPanel="True"></Rectangle>
