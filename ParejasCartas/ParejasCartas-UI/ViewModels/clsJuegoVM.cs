@@ -28,35 +28,31 @@ namespace ParejasCartas_UI.ViewModels
         private clsCarta _carta2;
         private int _numeroParejas;
         private DateTime _fecha;
-        //private DelegateCommand _reiniciar;
+        private DelegateCommand _reiniciar;
         #endregion
 
         #region constructor
         public clsJuegoVM()
         {
-            clsTablero tablero = new clsTablero();
-            _tablero = new ObservableCollection<clsCarta>(tablero.getTablero());
+            this.inicializarTablero();
             _cronometro = new DispatcherTimer();
             _cronometro.Interval = new TimeSpan(0,0,1);
             _cronometro.Tick += dispatcherTimer_Tick;
             _cronometro.Start();
-            _tableroHabilitado = true;
-            _numeroParejas = 0;
-            _fecha = new DateTime(1, 1, 1, 0, 0, 0);
-            //_reiniciar = new DelegateCommand(Reiniciar_Executed);
+            _reiniciar = new DelegateCommand(Reiniciar_Executed);
         }
 
         #endregion
 
         #region Propiedades publicas
 
-        //public DelegateCommand Reiniciar
-        //{
-        //    get
-        //    {
-        //        return _reiniciar;
-        //    }
-        //}
+        public DelegateCommand Reiniciar
+        {
+            get
+            {
+                return _reiniciar;
+            }
+        }
 
         public ObservableCollection<clsCarta> Tablero
         {
@@ -116,16 +112,36 @@ namespace ParejasCartas_UI.ViewModels
 
         #region Metodos
 
+        /// <summary>
+        /// Este metodo inicializa todos las propiedades para tener un nuevo tablero
+        /// </summary>
+        public void inicializarTablero()
+        {
+            clsTablero tablero = new clsTablero();
+            _tablero = new ObservableCollection<clsCarta>(tablero.getTablero());
+            _tableroHabilitado = true;
+            _numeroParejas = 0;
+            _fecha = new DateTime(1, 1, 1, 0, 0, 0);
+        }
+
         ///// <summary>
         ///// Esto es un evento que se ejecutara cuando se presione el boton reiniciar y lo que hara sera 
         ///// crear un nuevo tablero
         ///// </summary>
-        //private void Reiniciar_Executed()
-        //{
-        //    clsTablero tablero = new clsTablero();
-        //    _tablero = new ObservableCollection<clsCarta>(tablero.getTablero());
-        //    NotifyPropertyChanged("Tablero");
-        //}
+        private void Reiniciar_Executed()
+        {
+            _cronometro.Stop();
+            _tableroHabilitado = false;
+            NotifyPropertyChanged("TableroHabilitado");
+            _cartaSeleccionada = null;
+            this.inicializarTablero();
+            NotifyPropertyChanged("Tablero");
+            NotifyPropertyChanged("Tiempo");
+            //NotifyPropertyChanged("CartaSeleccionada");
+            _tableroHabilitado = true;
+            NotifyPropertyChanged("TableroHabilitado");
+            _cronometro.Start();
+        }
 
         /// <summary>
         /// Este metodo comprueba si la carta ya ha sido seleccionada y si no lo es comprueba si es la primera 
@@ -135,62 +151,64 @@ namespace ParejasCartas_UI.ViewModels
         /// </summary>
         public async void comprobarJugada()
         {
-            //Aqui comprueba que la carta que ha seleccionado no es una que ya este volteada
-            if (_cartaSeleccionada.Volteada)
+            if(_cartaSeleccionada != null)
             {
-                _cartaSeleccionada = null;
-            }
-            else
-            {
-                //Aqui comprobamos que carta es a la que le vamos a dar el valor
-                _cartaSeleccionada.Volteada = true;
-                if (_carta1 == null)
+                //Aqui comprueba que la carta que ha seleccionado no es una que ya este volteada
+                if (_cartaSeleccionada.Volteada)
                 {
-                    _carta1 = _cartaSeleccionada;
-
+                    _cartaSeleccionada = null;
                 }
                 else
                 {
-                    _carta2 = _cartaSeleccionada;
-
-
-                    //Aqui hago la comprobacion de las parejas
-                    _tableroHabilitado = false;
-                    NotifyPropertyChanged("TableroHabilitado");
-                    if (_carta1.ID == _carta2.ID)
+                    //Aqui comprobamos que carta es a la que le vamos a dar el valor
+                    _cartaSeleccionada.Volteada = true;
+                    if (_carta1 == null)
                     {
-                        _numeroParejas++;
-                        _carta2 = null;
-                        _carta1 = null;
+                        _carta1 = _cartaSeleccionada;
 
                     }
                     else
                     {
-                        Task task = Task.Delay(500);
-                        await task.AsAsyncAction();
-                        _carta1.Volteada = false;
-                        _carta2.Volteada = false;
-                        _carta2 = null;
-                        _carta1 = null;
-                        //Aqui intentamos que se deseleccione la carta para poder darle la vuelta  
-                        _cartaSeleccionada = null;
-                        NotifyPropertyChanged("CartaSeleccionada");
+                        _carta2 = _cartaSeleccionada;
 
 
+                        //Aqui hago la comprobacion de las parejas
+                        _tableroHabilitado = false;
+                        NotifyPropertyChanged("TableroHabilitado");
+                        if (_carta1.ID == _carta2.ID)
+                        {
+                            _numeroParejas++;
+                            _carta2 = null;
+                            _carta1 = null;
+
+                        }
+                        else
+                        {
+                            Task task = Task.Delay(500);
+                            await task.AsAsyncAction();
+                            _carta1.Volteada = false;
+                            _carta2.Volteada = false;
+                            _carta2 = null;
+                            _carta1 = null;
+                            //Aqui intentamos que se deseleccione la carta para poder darle la vuelta  
+                            _cartaSeleccionada = null;
+                            NotifyPropertyChanged("CartaSeleccionada");
+
+
+                        }
+
+                        //Aqui compruebo si ya ha encontrado todas las parejas
+                        if (_numeroParejas == 6)
+                        {
+                            _cronometro.Stop();
+                            _nombreJugador = await this.mostrarMensajeGanador();
+                            this.guardarResultado();
+                        }
+                        _tableroHabilitado = true;
+                        NotifyPropertyChanged("TableroHabilitado");
                     }
-
-                    //Aqui compruebo si ya ha encontrado todas las parejas
-                    if (_numeroParejas == 6)
-                    {
-                        _cronometro.Stop();
-                        _nombreJugador = await this.mostrarMensajeGanador();
-                        this.guardarResultado();
-                    }
-                    _tableroHabilitado = true;
-                    NotifyPropertyChanged("TableroHabilitado");
                 }
             }
-
             
         }
 

@@ -121,6 +121,7 @@
     </Compile>
     <Compile Include="Utils\clsTablero.cs" />
     <Compile Include="ViewModels\clsJuegoVM.cs" />
+    <Compile Include="ViewModels\DelegateCommand.cs" />
     <Compile Include="View\Juego.xaml.cs">
       <DependentUpon>Juego.xaml</DependentUpon>
     </Compile>

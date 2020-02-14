@@ -18,6 +18,7 @@
     <RelativePanel>
         <Rectangle Name="Barra" RelativePanel.AlignRightWithPanel="True" Height="100" Fill="IndianRed" RelativePanel.AlignLeftWithPanel="True"></Rectangle>
         <AppBarButton Name="Volver" Icon="Back" Tapped="AppBarButton_Tapped"></AppBarButton>
+        <AppBarButton Name="Reiniciar" Icon="Refresh" Command="{Binding Path=Reiniciar}" RelativePanel.RightOf="Volver"></AppBarButton>
         <StackPanel  Name="Cronometro"  Margin="150,0,0,0" BorderBrush="LightGray" Orientation="Horizontal" RelativePanel.AlignRightWithPanel="True">
             <TextBlock FontSize="50" Margin="6">Tiempo:</TextBlock>
             <TextBlock FontSize="50" Margin="6" TextAlignment="Right" Text="{Binding Path=Tiempo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>

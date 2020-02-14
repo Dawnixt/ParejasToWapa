@@ -49,6 +49,11 @@ namespace ParejasCartas_UI.View
             sb.Begin();
         }
 
+        private void Reiniciar_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ViewModel.inicializarTablero();
+        }
+
         //private void Image_Tapped(object sender, TappedRoutedEventArgs e)
         //{
         //    AnimacionRotation.Begin();

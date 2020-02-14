@@ -18,14 +18,15 @@
     <RelativePanel>
         <Rectangle x:ConnectionId='2' Name="Barra" RelativePanel.AlignRightWithPanel="True" Height="100" Fill="IndianRed" RelativePanel.AlignLeftWithPanel="True"></Rectangle>
         <AppBarButton x:ConnectionId='3' Name="Volver" Icon="Back"                             ></AppBarButton>
-        <StackPanel x:ConnectionId='4'  Name="Cronometro"  Margin="150,0,0,0" BorderBrush="LightGray" Orientation="Horizontal" RelativePanel.AlignRightWithPanel="True">
+        <AppBarButton x:ConnectionId='4' Name="Reiniciar" Icon="Refresh" Command="{Binding Path=Reiniciar}" RelativePanel.RightOf="Volver"></AppBarButton>
+        <StackPanel x:ConnectionId='5'  Name="Cronometro"  Margin="150,0,0,0" BorderBrush="LightGray" Orientation="Horizontal" RelativePanel.AlignRightWithPanel="True">
             <TextBlock FontSize="50" Margin="6">Tiempo:</TextBlock>
             <TextBlock FontSize="50" Margin="6" TextAlignment="Right" Text="{Binding Path=Tiempo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBlock>
         </StackPanel>
-        <GridView x:ConnectionId='5' Name="Cartas" RelativePanel.Below="Barra" Margin="12,12,0,0" Width="630" RelativePanel.AlignVerticalCenterWithPanel="True" IsEnabled="{Binding Path=TableroHabilitado, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignHorizontalCenterWithPanel="True" HorizontalAlignment="Center" VerticalAlignment="Center" SelectedItem="{Binding Path=CartaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Path=Tablero}">
+        <GridView x:ConnectionId='6' Name="Cartas" RelativePanel.Below="Barra" Margin="12,12,0,0" Width="630" RelativePanel.AlignVerticalCenterWithPanel="True" IsEnabled="{Binding Path=TableroHabilitado, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignHorizontalCenterWithPanel="True" HorizontalAlignment="Center" VerticalAlignment="Center" SelectedItem="{Binding Path=CartaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Path=Tablero}">
             <GridView.ItemTemplate>
                 <DataTemplate>
-                    <Image x:ConnectionId='6'                       x:Name="Carta" Width="120" Margin="6" Source="{Binding Path=ImagenAMostrar, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <Image x:ConnectionId='7'                       x:Name="Carta" Width="120" Margin="6" Source="{Binding Path=ImagenAMostrar, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                         <Image.Resources>
                             <Storyboard x:Name="Rotar">
                                 <DoubleAnimation Duration="0:0:0.5"
