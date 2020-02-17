@@ -18,7 +18,7 @@
         <TextBlock x:Name="Titulo" RelativePanel.AlignHorizontalCenterWithPanel="True" FontSize="40" FontStyle="Italic" Margin="0,50,0,0">RANKING</TextBlock>
         <Image x:Name="Imagen" RelativePanel.RightOf="Titulo" Margin="20" Source="ms-appx:///Assets/ranking.png" Width="150"></Image>
         <TextBlock  RelativePanel.AlignHorizontalCenterWithPanel="True" Name="Top" RelativePanel.Below="Imagen" RelativePanel.AlignVerticalCenterWithPanel="True" FontSize="40" FontStyle="Italic" >Top 10 players</TextBlock>
-        <Grid Name="Lista" BorderThickness="6" RelativePanel.AlignVerticalCenterWithPanel="True" BorderBrush="LightGray" Background="LightGray" Width="400" RelativePanel.Below="Top" RelativePanel.AlignHorizontalCenterWithPanel="True">
+        <Grid Width="350" Name="Lista" BorderThickness="6" RelativePanel.AlignVerticalCenterWithPanel="True" BorderBrush="LightGray" Background="LightGray" RelativePanel.Below="Top" RelativePanel.AlignHorizontalCenterWithPanel="True">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
@@ -27,9 +27,9 @@
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Text="Nick" Grid.Column="0" Margin="0,0,6,0" TextAlignment="Center" FontSize="30" Foreground="Black"></TextBlock>
-            <TextBlock Grid.Row="0" Text="Tiempo" Grid.Column="1" TextAlignment="Center" FontSize="30" Foreground="Black"></TextBlock>
-            <ListView Grid.Row="1" Grid.Column="0" RelativePanel.Below="Info" Margin="12" Name="ListaNombres" ItemsSource="{Binding Path=ListadoPuntuaciones , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <TextBlock Grid.Row="0" Text="Nick" Grid.Column="0" Margin="12,0,6,0" TextAlignment="Center" FontSize="30" Foreground="Black"></TextBlock>
+            <TextBlock Grid.Row="0" Text="Tiempo" Margin="112,0,0,0" Grid.Column="1" TextAlignment="Center" FontSize="30" Foreground="Black"></TextBlock>
+            <ListView Grid.Row="1" Grid.Column="0" RelativePanel.Below="Info" Margin="0,0,0,0" Name="ListaNombres" ItemsSource="{Binding Path=ListadoPuntuaciones , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
@@ -42,7 +42,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <ListView Grid.Row="1" Grid.Column="1" RelativePanel.Below="Info" Margin="12" Name="ListaPuntuaciones" ItemsSource="{Binding Path=ListadoPuntuaciones , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <ListView Margin="150,0,12,0" Grid.Row="1" Grid.Column="1" RelativePanel.Below="Info" Name="ListaPuntuaciones" ItemsSource="{Binding Path=ListadoPuntuaciones , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
@@ -50,11 +50,10 @@
                                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="{Binding Path=Tiempo}" Foreground="Black" Grid.Column="1" TextAlignment="Right" ></TextBlock>
+                            <TextBlock Text="{Binding Path=Tiempo}" Foreground="Black" Grid.Column="1" TextAlignment="Left" ></TextBlock>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-                <!--TODO Una zona para poner tu puntuacion-->
             </ListView>
         </Grid>
         

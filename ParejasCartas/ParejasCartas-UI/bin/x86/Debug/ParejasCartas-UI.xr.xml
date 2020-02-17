@@ -121,10 +121,10 @@
     <RootType FullName="ParejasCartas_UI.ViewModels.clsRankingVM" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Name" />
+      <RootProperty Name="Width" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Background" />
-      <RootProperty Name="Width" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Children" />
